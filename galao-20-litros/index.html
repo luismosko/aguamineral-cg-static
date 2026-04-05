@@ -1,0 +1,603 @@
+<!--
+  galao-20-litros/index.html | Versão: 1.0.0 | Atualizado: 2026-04-05 | Descrição: Galão 20 Litros - Água Mineral Campo Grande
+-->
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Galão de Água Mineral 20 Litros em Campo Grande MS — R$ 12,00 | Água Mineral</title>
+  <meta name="description" content="Galão de Água Mineral 20 Litros em Campo Grande. R$ 12,00 (galão). Entrega rápida em todos os bairros. Marca Por do Sol. WhatsApp (67) 99131-0665.">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://aguamineralcampogrande.com.br/galao-20-litros/">
+  
+  <meta property="og:title" content="Galão de Água Mineral 20 Litros em Campo Grande MS — R$ 12,00">
+  <meta property="og:description" content="Galão de água mineral Por do Sol com 20 litros. Ideal para residências, escritórios e empresas. Sistema retornável econômico e sustentável.">
+  <meta property="og:url" content="https://aguamineralcampogrande.com.br/galao-20-litros/">
+  <meta property="og:type" content="product">
+  <meta property="og:locale" content="pt_BR">
+  <meta property="og:image" content="https://aguamineralcampogrande.com.br/images/galao-20l.webp">
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/webp" href="/images/logo.webp">
+  
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    
+    :root {
+      --primaria: #0077b6;
+      --primaria-clara: #00b4d8;
+      --primaria-escura: #023e8a;
+      --primaria-bg: #e0f7fa;
+      --verde-wpp: #25D366;
+      --cinza-bg: #f0f9ff;
+      --cinza-texto: #1e3a5f;
+      --cinza-sub: #5a7a9a;
+      --borda: #b8e0ec;
+      --branco: #ffffff;
+      --radius: 20px;
+      --radius-btn: 14px;
+      --shadow: 0 8px 30px rgba(0,119,182,0.12);
+    }
+    
+    body { font-family: 'Inter', sans-serif; color: var(--cinza-texto); line-height: 1.6; }
+    a { text-decoration: none; color: inherit; }
+    img { max-width: 100%; height: auto; display: block; }
+    
+    /* Header */
+    .topbar {
+      background: linear-gradient(135deg, var(--primaria-escura) 0%, var(--primaria) 100%);
+      color: var(--branco);
+      padding: 10px 20px;
+      font-size: 13px;
+    }
+    .topbar-inner {
+      max-width: 1200px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+    header {
+      background: var(--branco);
+      border-bottom: 1px solid var(--borda);
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+    nav {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 8px 20px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+    }
+    .logo img { height: 55px; width: auto; }
+    .nav-links { display: flex; list-style: none; gap: 8px; align-items: center; }
+    .nav-links a { font-size: 14px; font-weight: 600; padding: 10px 18px; border-radius: var(--radius-btn); transition: all 0.3s; }
+    .nav-links a:hover { background: var(--primaria-bg); color: var(--primaria); }
+    .nav-wpp { background: var(--verde-wpp) !important; color: var(--branco) !important; }
+    .hamburger { display: none; flex-direction: column; gap: 5px; cursor: pointer; background: none; border: none; }
+    .hamburger span { width: 26px; height: 3px; background: var(--primaria); border-radius: 3px; }
+    .mobile-menu { display: none; background: var(--branco); padding: 16px 20px; }
+    .mobile-menu.open { display: block; }
+    .mobile-menu a { display: block; padding: 12px 0; color: var(--primaria); font-weight: 600; border-bottom: 1px solid var(--borda); }
+    
+    /* Breadcrumb */
+    .breadcrumb {
+      background: var(--cinza-bg);
+      padding: 12px 20px;
+      font-size: 13px;
+    }
+    .breadcrumb-inner {
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+    .breadcrumb a { color: var(--primaria); }
+    .breadcrumb span { color: var(--cinza-sub); }
+    
+    /* Produto Hero */
+    .produto-hero {
+      background: var(--branco);
+      padding: 60px 20px;
+    }
+    .produto-inner {
+      max-width: 1200px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 60px;
+      align-items: center;
+    }
+    .produto-img {
+      background: var(--cinza-bg);
+      border-radius: var(--radius);
+      padding: 40px;
+      text-align: center;
+    }
+    .produto-img img {
+      max-height: 350px;
+      margin: 0 auto;
+    }
+    .produto-info h1 {
+      font-size: 2rem;
+      font-weight: 800;
+      color: var(--cinza-texto);
+      margin-bottom: 16px;
+    }
+    .produto-info h1 span { color: var(--primaria); }
+    .produto-desc {
+      font-size: 16px;
+      color: var(--cinza-sub);
+      margin-bottom: 24px;
+      line-height: 1.7;
+    }
+    .produto-detalhes {
+      background: var(--primaria-bg);
+      padding: 16px 20px;
+      border-radius: var(--radius-btn);
+      margin-bottom: 24px;
+      font-size: 14px;
+    }
+    
+    /* Preço */
+    .preco-card {
+      display: inline-flex;
+      background: var(--branco);
+      border: 2px solid var(--primaria);
+      border-radius: var(--radius);
+      overflow: hidden;
+      margin-bottom: 24px;
+      box-shadow: var(--shadow);
+    }
+    .preco-item {
+      padding: 16px 28px;
+      text-align: center;
+    }
+    .preco-item + .preco-item {
+      border-left: 1px solid var(--borda);
+    }
+    .preco-label {
+      font-size: 11px;
+      font-weight: 700;
+      color: var(--cinza-sub);
+      text-transform: uppercase;
+      margin-bottom: 4px;
+    }
+    .preco-valor {
+      font-size: 2.2rem;
+      font-weight: 900;
+      color: var(--primaria);
+    }
+    .preco-valor sup { font-size: 1rem; }
+    .preco-tag {
+      font-size: 11px;
+      font-weight: 600;
+      color: var(--verde-wpp);
+    }
+    
+    /* Botões */
+    .btn-wpp {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      background: var(--verde-wpp);
+      color: var(--branco);
+      font-weight: 700;
+      font-size: 16px;
+      padding: 16px 32px;
+      border-radius: var(--radius-btn);
+      transition: all 0.2s;
+    }
+    .btn-wpp:hover { background: #1db954; transform: translateY(-2px); }
+    .btn-wpp svg { width: 22px; height: 22px; fill: currentColor; }
+    
+    /* Seções */
+    section { padding: 60px 20px; }
+    .container { max-width: 1000px; margin: 0 auto; }
+    .section-title {
+      font-size: 1.8rem;
+      font-weight: 800;
+      text-align: center;
+      margin-bottom: 40px;
+    }
+    .bg-gray { background: var(--cinza-bg); }
+    
+    /* FAQ */
+    .faq-list { max-width: 800px; margin: 0 auto; }
+    .faq-item {
+      background: var(--branco);
+      border: 1px solid var(--borda);
+      border-radius: var(--radius);
+      margin-bottom: 12px;
+      overflow: hidden;
+    }
+    .faq-btn {
+      width: 100%;
+      text-align: left;
+      background: none;
+      border: none;
+      padding: 20px 24px;
+      font-size: 16px;
+      font-weight: 700;
+      color: var(--cinza-texto);
+      cursor: pointer;
+      display: flex;
+      justify-content: space-between;
+      font-family: inherit;
+    }
+    .faq-btn::after { content: '+'; font-size: 24px; color: var(--primaria); }
+    .faq-item.open .faq-btn::after { transform: rotate(45deg); }
+    .faq-content { max-height: 0; overflow: hidden; transition: max-height 0.3s; }
+    .faq-item.open .faq-content { max-height: 300px; }
+    .faq-content p { padding: 0 24px 20px; font-size: 15px; color: var(--cinza-sub); }
+    
+    /* Relacionados */
+    .relacionados {
+      display: flex;
+      gap: 20px;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+    .produto-relacionado {
+      background: var(--branco);
+      border: 1px solid var(--borda);
+      border-radius: var(--radius);
+      padding: 20px;
+      text-align: center;
+      width: 180px;
+      transition: all 0.3s;
+    }
+    .produto-relacionado:hover {
+      border-color: var(--primaria);
+      transform: translateY(-5px);
+      box-shadow: var(--shadow);
+    }
+    .produto-relacionado img {
+      height: 100px;
+      margin: 0 auto 12px;
+      object-fit: contain;
+    }
+    .produto-relacionado span {
+      font-weight: 600;
+      font-size: 14px;
+      color: var(--primaria);
+    }
+    
+    /* CTA */
+    .cta-final {
+      background: linear-gradient(135deg, var(--primaria-escura) 0%, var(--primaria) 100%);
+      padding: 60px 20px;
+      text-align: center;
+    }
+    .cta-final h2 { color: var(--branco); font-size: 1.8rem; margin-bottom: 16px; }
+    .cta-final p { color: rgba(255,255,255,0.85); margin-bottom: 24px; }
+    
+    /* Footer */
+    footer {
+      background: #0f172a;
+      color: rgba(255,255,255,0.7);
+      padding: 40px 20px;
+      text-align: center;
+    }
+    footer a { color: var(--primaria-clara); }
+    
+    /* Float WPP */
+    .float-wpp {
+      position: fixed;
+      bottom: 30px;
+      right: 30px;
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      background: var(--verde-wpp);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 6px 20px rgba(37,211,102,0.4);
+      z-index: 999;
+    }
+    .float-wpp svg { width: 32px; height: 32px; fill: var(--branco); }
+    
+    @media (max-width: 900px) {
+      .nav-links { display: none; }
+      .hamburger { display: flex; }
+      .produto-inner { grid-template-columns: 1fr; text-align: center; }
+      .preco-card { margin: 0 auto 24px; }
+    }
+    @media (max-width: 600px) {
+      .preco-card { flex-direction: column; }
+      .preco-item + .preco-item { border-left: none; border-top: 1px solid var(--borda); }
+    }
+  </style>
+</head>
+<body>
+
+<div class="topbar">
+  <div class="topbar-inner">
+    <span>📍 Rua Olímpio Klafke, 635 – Mata do Jacinto – Campo Grande/MS</span>
+    <span>🕐 Seg–Sáb: 7h às 18h30 | 📞 (67) 99131-0665</span>
+  </div>
+</div>
+
+<header>
+  <nav>
+    <a href="/" class="logo">
+      <img src="/images/logo.webp" alt="Água Mineral Campo Grande" width="130" height="55">
+    </a>
+    <ul class="nav-links">
+      <li><a href="/">Home</a></li>
+      <li><a href="/#produtos">Produtos</a></li>
+      <li><a href="/bairros/">Bairros</a></li>
+      <li><a href="/#faq">Dúvidas</a></li>
+      <li><a href="https://wa.me/5567991310665?text=Ol%C3%A1%2C%20quero%20pedir%20galao%2020%20litros" target="_blank" class="nav-wpp">WhatsApp</a></li>
+    </ul>
+    <button class="hamburger" id="hamburger"><span></span><span></span><span></span></button>
+  </nav>
+  <div class="mobile-menu" id="mobile-menu">
+    <a href="/">Home</a>
+    <a href="/#produtos">Produtos</a>
+    <a href="/bairros/">Bairros</a>
+    <a href="https://wa.me/5567991310665" target="_blank">📲 WhatsApp</a>
+  </div>
+</header>
+
+<div class="breadcrumb">
+  <div class="breadcrumb-inner">
+    <a href="/">Home</a> › <a href="/#produtos">Produtos</a> › <span>Galão 20 Litros</span>
+  </div>
+</div>
+
+<section class="produto-hero">
+  <div class="produto-inner">
+    <div class="produto-img">
+      <img src="/images/galao-20l.webp" alt="Galão de Água Mineral 20 Litros - Água Mineral Por do Sol Campo Grande" width="300" height="300">
+    </div>
+    <div class="produto-info">
+      <h1><span>Galão 20 Litros</span> — Água Mineral Campo Grande</h1>
+      <p class="produto-desc">Galão de água mineral Por do Sol com 20 litros. Ideal para residências, escritórios e empresas. Sistema retornável econômico e sustentável.</p>
+      <div class="produto-detalhes">
+        ✓ Água mineral natural sem gás. Vasilhame retornável. Volume: 20 litros.
+      </div>
+      
+            <div class="preco-card">
+              <div class="preco-item">
+                <div class="preco-label">Reposição</div>
+                <div class="preco-valor"><sup>R$</sup> 12,00</div>
+                <div class="preco-tag">Galão retornável</div>
+              </div>
+              <div class="preco-item">
+                <div class="preco-label">Com Vasilhame</div>
+                <div class="preco-valor"><sup>R$</sup> 45,00</div>
+                <div class="preco-tag">1ª compra</div>
+              </div>
+            </div>
+      <a class="btn-wpp" href="https://wa.me/5567991310665?text=Ol%C3%A1%2C%20quero%20pedir%20Galão%2020%20Litros" target="_blank">
+        <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347zM12 0C5.373 0 0 5.373 0 12c0 2.107.548 4.086 1.508 5.806L0 24l6.362-1.481A11.945 11.945 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0z"/></svg>
+        Pedir pelo WhatsApp
+      </a>
+    </div>
+  </div>
+</section>
+
+<section class="bg-gray">
+  <div class="container">
+    <h2 class="section-title">Dúvidas sobre Galão 20 Litros</h2>
+    <div class="faq-list">
+      <div class="faq-item">
+        <button class="faq-btn">Qual o preço do galão 20 litros?</button>
+        <div class="faq-content">
+          <p>O galão 20 litros de água mineral Por do Sol custa R$ 12,00 (reposição) ou R$ 45,00 com vasilhame novo. Entregamos em toda Campo Grande.</p>
+        </div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-btn">Como funciona o galão retornável?</button>
+        <div class="faq-content">
+          <p>O sistema é simples: você compra o primeiro galão com vasilhame (R$ 45,00) e nas próximas compras paga apenas a reposição (R$ 12,00), devolvendo o galão vazio.</p>
+        </div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-btn">Qual a validade da água no galão?</button>
+        <div class="faq-content">
+          <p>A água mineral no galão lacrado tem validade de 3 meses. Após aberto, recomendamos consumir em até 15 dias para manter a qualidade.</p>
+        </div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-btn">Vocês entregam galão 20L para empresas?</button>
+        <div class="faq-content">
+          <p>Sim! Atendemos empresas, escritórios e comércios com condições especiais para pedidos recorrentes. Entre em contato pelo WhatsApp.</p>
+        </div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-btn">O galão serve em qualquer bebedouro?</button>
+        <div class="faq-content">
+          <p>Sim, o galão 20 litros é compatível com todos os modelos de bebedouros de galão invertido disponíveis no mercado.</p>
+        </div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-btn">Qual a diferença para o garrafão 5L?</button>
+        <div class="faq-content">
+          <p>O galão 20L é ideal para maior consumo (famílias, escritórios), enquanto o garrafão 5L é mais prático para consumo individual ou viagens.</p>
+        </div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-btn">Posso agendar entrega semanal?</button>
+        <div class="faq-content">
+          <p>Sim! Oferecemos entregas programadas semanais ou quinzenais. Basta combinar pelo WhatsApp o dia de sua preferência.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="container">
+    <h2 class="section-title">Produtos Relacionados</h2>
+    <div class="relacionados">
+      <a href="/garrafao-5-litros/" class="produto-relacionado">
+        <img src="/images/garrafao-5l.webp" alt="Garrafão 5 Litros" loading="lazy">
+        <span>Garrafão 5 Litros</span>
+      </a>
+      <a href="/copo-200ml/" class="produto-relacionado">
+        <img src="/images/copo-200ml.webp" alt="Copo 200ml" loading="lazy">
+        <span>Copo 200ml</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<section class="cta-final">
+  <h2>Peça seu Galão 20 Litros agora!</h2>
+  <p>Entrega rápida em toda Campo Grande. WhatsApp (67) 99131-0665.</p>
+  <a class="btn-wpp" href="https://wa.me/5567991310665?text=Ol%C3%A1%2C%20quero%20pedir%20Galão%2020%20Litros" target="_blank">
+    <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347zM12 0C5.373 0 0 5.373 0 12c0 2.107.548 4.086 1.508 5.806L0 24l6.362-1.481A11.945 11.945 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0z" fill="#fff"/></svg>
+    Pedir pelo WhatsApp
+  </a>
+</section>
+
+<footer>
+  <p>© 2026 Água Mineral Campo Grande — Marca Por do Sol</p>
+  <p>Rua Olímpio Klafke, 635 – Mata do Jacinto – Campo Grande/MS</p>
+  <p><a href="/">Home</a> · <a href="/#produtos">Produtos</a> · <a href="/bairros/">Bairros</a></p>
+</footer>
+
+<a class="float-wpp" href="https://wa.me/5567991310665?text=Ol%C3%A1%2C%20quero%20pedir%20%C3%A1gua%20mineral" target="_blank" aria-label="WhatsApp">
+  <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347zM12 0C5.373 0 0 5.373 0 12c0 2.107.548 4.086 1.508 5.806L0 24l6.362-1.481A11.945 11.945 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0z"/></svg>
+</a>
+
+<script>
+document.querySelectorAll('.faq-btn').forEach(btn => {
+  btn.addEventListener('click', () => {
+    const item = btn.parentElement;
+    const isOpen = item.classList.contains('open');
+    document.querySelectorAll('.faq-item').forEach(i => i.classList.remove('open'));
+    if (!isOpen) item.classList.add('open');
+  });
+});
+document.getElementById('hamburger').addEventListener('click', () => {
+  document.getElementById('mobile-menu').classList.toggle('open');
+});
+</script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Product",
+      "name": "Galão de Água Mineral 20 Litros",
+      "image": "https://aguamineralcampogrande.com.br/images/galao-20l.webp",
+      "description": "Galão de água mineral Por do Sol com 20 litros. Ideal para residências, escritórios e empresas. Sistema retornável econômico e sustentável.",
+      "brand": {
+        "@type": "Brand",
+        "name": "Por do Sol"
+      },
+      "offers": {
+        "@type": "Offer",
+        "url": "https://aguamineralcampogrande.com.br/galao-20-litros/",
+        "priceCurrency": "BRL",
+        "price": "12.00",
+        "availability": "https://schema.org/InStock",
+        "seller": {
+          "@type": "Organization",
+          "name": "Água Mineral Campo Grande"
+        }
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://aguamineralcampogrande.com.br/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Produtos",
+          "item": "https://aguamineralcampogrande.com.br/#produtos"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Galão 20 Litros",
+          "item": "https://aguamineralcampogrande.com.br/galao-20-litros/"
+        }
+      ]
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Qual o preço do galão 20 litros?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "O galão 20 litros de água mineral Por do Sol custa R$ 12,00 (reposição) ou R$ 45,00 com vasilhame novo. Entregamos em toda Campo Grande."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Como funciona o galão retornável?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "O sistema é simples: você compra o primeiro galão com vasilhame (R$ 45,00) e nas próximas compras paga apenas a reposição (R$ 12,00), devolvendo o galão vazio."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Qual a validade da água no galão?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "A água mineral no galão lacrado tem validade de 3 meses. Após aberto, recomendamos consumir em até 15 dias para manter a qualidade."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Vocês entregam galão 20L para empresas?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Sim! Atendemos empresas, escritórios e comércios com condições especiais para pedidos recorrentes. Entre em contato pelo WhatsApp."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "O galão serve em qualquer bebedouro?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Sim, o galão 20 litros é compatível com todos os modelos de bebedouros de galão invertido disponíveis no mercado."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Qual a diferença para o garrafão 5L?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "O galão 20L é ideal para maior consumo (famílias, escritórios), enquanto o garrafão 5L é mais prático para consumo individual ou viagens."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Posso agendar entrega semanal?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Sim! Oferecemos entregas programadas semanais ou quinzenais. Basta combinar pelo WhatsApp o dia de sua preferência."
+          }
+        }
+      ]
+    }
+  ]
+}
+</script>
+
+</body>
+</html>

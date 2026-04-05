@@ -1,0 +1,598 @@
+<!--
+  copo-200ml/index.html | Versão: 1.0.0 | Atualizado: 2026-04-05 | Descrição: Copo 200ml - Água Mineral Campo Grande
+-->
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Copo de Água Mineral 200ml em Campo Grande MS — R$ 25,00 | Água Mineral</title>
+  <meta name="description" content="Copo de Água Mineral 200ml em Campo Grande. R$ 25,00 (caixa c/ 48). Entrega rápida em todos os bairros. Marca Por do Sol. WhatsApp (67) 99131-0665.">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://aguamineralcampogrande.com.br/copo-200ml/">
+  
+  <meta property="og:title" content="Copo de Água Mineral 200ml em Campo Grande MS — R$ 25,00">
+  <meta property="og:description" content="Caixa com 48 copos de água mineral Por do Sol 200ml. Ideal para eventos, reuniões e consultórios.">
+  <meta property="og:url" content="https://aguamineralcampogrande.com.br/copo-200ml/">
+  <meta property="og:type" content="product">
+  <meta property="og:locale" content="pt_BR">
+  <meta property="og:image" content="https://aguamineralcampogrande.com.br/images/copo-200ml.webp">
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/webp" href="/images/logo.webp">
+  
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    
+    :root {
+      --primaria: #0077b6;
+      --primaria-clara: #00b4d8;
+      --primaria-escura: #023e8a;
+      --primaria-bg: #e0f7fa;
+      --verde-wpp: #25D366;
+      --cinza-bg: #f0f9ff;
+      --cinza-texto: #1e3a5f;
+      --cinza-sub: #5a7a9a;
+      --borda: #b8e0ec;
+      --branco: #ffffff;
+      --radius: 20px;
+      --radius-btn: 14px;
+      --shadow: 0 8px 30px rgba(0,119,182,0.12);
+    }
+    
+    body { font-family: 'Inter', sans-serif; color: var(--cinza-texto); line-height: 1.6; }
+    a { text-decoration: none; color: inherit; }
+    img { max-width: 100%; height: auto; display: block; }
+    
+    /* Header */
+    .topbar {
+      background: linear-gradient(135deg, var(--primaria-escura) 0%, var(--primaria) 100%);
+      color: var(--branco);
+      padding: 10px 20px;
+      font-size: 13px;
+    }
+    .topbar-inner {
+      max-width: 1200px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+    header {
+      background: var(--branco);
+      border-bottom: 1px solid var(--borda);
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+    nav {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 8px 20px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+    }
+    .logo img { height: 55px; width: auto; }
+    .nav-links { display: flex; list-style: none; gap: 8px; align-items: center; }
+    .nav-links a { font-size: 14px; font-weight: 600; padding: 10px 18px; border-radius: var(--radius-btn); transition: all 0.3s; }
+    .nav-links a:hover { background: var(--primaria-bg); color: var(--primaria); }
+    .nav-wpp { background: var(--verde-wpp) !important; color: var(--branco) !important; }
+    .hamburger { display: none; flex-direction: column; gap: 5px; cursor: pointer; background: none; border: none; }
+    .hamburger span { width: 26px; height: 3px; background: var(--primaria); border-radius: 3px; }
+    .mobile-menu { display: none; background: var(--branco); padding: 16px 20px; }
+    .mobile-menu.open { display: block; }
+    .mobile-menu a { display: block; padding: 12px 0; color: var(--primaria); font-weight: 600; border-bottom: 1px solid var(--borda); }
+    
+    /* Breadcrumb */
+    .breadcrumb {
+      background: var(--cinza-bg);
+      padding: 12px 20px;
+      font-size: 13px;
+    }
+    .breadcrumb-inner {
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+    .breadcrumb a { color: var(--primaria); }
+    .breadcrumb span { color: var(--cinza-sub); }
+    
+    /* Produto Hero */
+    .produto-hero {
+      background: var(--branco);
+      padding: 60px 20px;
+    }
+    .produto-inner {
+      max-width: 1200px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 60px;
+      align-items: center;
+    }
+    .produto-img {
+      background: var(--cinza-bg);
+      border-radius: var(--radius);
+      padding: 40px;
+      text-align: center;
+    }
+    .produto-img img {
+      max-height: 350px;
+      margin: 0 auto;
+    }
+    .produto-info h1 {
+      font-size: 2rem;
+      font-weight: 800;
+      color: var(--cinza-texto);
+      margin-bottom: 16px;
+    }
+    .produto-info h1 span { color: var(--primaria); }
+    .produto-desc {
+      font-size: 16px;
+      color: var(--cinza-sub);
+      margin-bottom: 24px;
+      line-height: 1.7;
+    }
+    .produto-detalhes {
+      background: var(--primaria-bg);
+      padding: 16px 20px;
+      border-radius: var(--radius-btn);
+      margin-bottom: 24px;
+      font-size: 14px;
+    }
+    
+    /* Preço */
+    .preco-card {
+      display: inline-flex;
+      background: var(--branco);
+      border: 2px solid var(--primaria);
+      border-radius: var(--radius);
+      overflow: hidden;
+      margin-bottom: 24px;
+      box-shadow: var(--shadow);
+    }
+    .preco-item {
+      padding: 16px 28px;
+      text-align: center;
+    }
+    .preco-item + .preco-item {
+      border-left: 1px solid var(--borda);
+    }
+    .preco-label {
+      font-size: 11px;
+      font-weight: 700;
+      color: var(--cinza-sub);
+      text-transform: uppercase;
+      margin-bottom: 4px;
+    }
+    .preco-valor {
+      font-size: 2.2rem;
+      font-weight: 900;
+      color: var(--primaria);
+    }
+    .preco-valor sup { font-size: 1rem; }
+    .preco-tag {
+      font-size: 11px;
+      font-weight: 600;
+      color: var(--verde-wpp);
+    }
+    
+    /* Botões */
+    .btn-wpp {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      background: var(--verde-wpp);
+      color: var(--branco);
+      font-weight: 700;
+      font-size: 16px;
+      padding: 16px 32px;
+      border-radius: var(--radius-btn);
+      transition: all 0.2s;
+    }
+    .btn-wpp:hover { background: #1db954; transform: translateY(-2px); }
+    .btn-wpp svg { width: 22px; height: 22px; fill: currentColor; }
+    
+    /* Seções */
+    section { padding: 60px 20px; }
+    .container { max-width: 1000px; margin: 0 auto; }
+    .section-title {
+      font-size: 1.8rem;
+      font-weight: 800;
+      text-align: center;
+      margin-bottom: 40px;
+    }
+    .bg-gray { background: var(--cinza-bg); }
+    
+    /* FAQ */
+    .faq-list { max-width: 800px; margin: 0 auto; }
+    .faq-item {
+      background: var(--branco);
+      border: 1px solid var(--borda);
+      border-radius: var(--radius);
+      margin-bottom: 12px;
+      overflow: hidden;
+    }
+    .faq-btn {
+      width: 100%;
+      text-align: left;
+      background: none;
+      border: none;
+      padding: 20px 24px;
+      font-size: 16px;
+      font-weight: 700;
+      color: var(--cinza-texto);
+      cursor: pointer;
+      display: flex;
+      justify-content: space-between;
+      font-family: inherit;
+    }
+    .faq-btn::after { content: '+'; font-size: 24px; color: var(--primaria); }
+    .faq-item.open .faq-btn::after { transform: rotate(45deg); }
+    .faq-content { max-height: 0; overflow: hidden; transition: max-height 0.3s; }
+    .faq-item.open .faq-content { max-height: 300px; }
+    .faq-content p { padding: 0 24px 20px; font-size: 15px; color: var(--cinza-sub); }
+    
+    /* Relacionados */
+    .relacionados {
+      display: flex;
+      gap: 20px;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+    .produto-relacionado {
+      background: var(--branco);
+      border: 1px solid var(--borda);
+      border-radius: var(--radius);
+      padding: 20px;
+      text-align: center;
+      width: 180px;
+      transition: all 0.3s;
+    }
+    .produto-relacionado:hover {
+      border-color: var(--primaria);
+      transform: translateY(-5px);
+      box-shadow: var(--shadow);
+    }
+    .produto-relacionado img {
+      height: 100px;
+      margin: 0 auto 12px;
+      object-fit: contain;
+    }
+    .produto-relacionado span {
+      font-weight: 600;
+      font-size: 14px;
+      color: var(--primaria);
+    }
+    
+    /* CTA */
+    .cta-final {
+      background: linear-gradient(135deg, var(--primaria-escura) 0%, var(--primaria) 100%);
+      padding: 60px 20px;
+      text-align: center;
+    }
+    .cta-final h2 { color: var(--branco); font-size: 1.8rem; margin-bottom: 16px; }
+    .cta-final p { color: rgba(255,255,255,0.85); margin-bottom: 24px; }
+    
+    /* Footer */
+    footer {
+      background: #0f172a;
+      color: rgba(255,255,255,0.7);
+      padding: 40px 20px;
+      text-align: center;
+    }
+    footer a { color: var(--primaria-clara); }
+    
+    /* Float WPP */
+    .float-wpp {
+      position: fixed;
+      bottom: 30px;
+      right: 30px;
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      background: var(--verde-wpp);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 6px 20px rgba(37,211,102,0.4);
+      z-index: 999;
+    }
+    .float-wpp svg { width: 32px; height: 32px; fill: var(--branco); }
+    
+    @media (max-width: 900px) {
+      .nav-links { display: none; }
+      .hamburger { display: flex; }
+      .produto-inner { grid-template-columns: 1fr; text-align: center; }
+      .preco-card { margin: 0 auto 24px; }
+    }
+    @media (max-width: 600px) {
+      .preco-card { flex-direction: column; }
+      .preco-item + .preco-item { border-left: none; border-top: 1px solid var(--borda); }
+    }
+  </style>
+</head>
+<body>
+
+<div class="topbar">
+  <div class="topbar-inner">
+    <span>📍 Rua Olímpio Klafke, 635 – Mata do Jacinto – Campo Grande/MS</span>
+    <span>🕐 Seg–Sáb: 7h às 18h30 | 📞 (67) 99131-0665</span>
+  </div>
+</div>
+
+<header>
+  <nav>
+    <a href="/" class="logo">
+      <img src="/images/logo.webp" alt="Água Mineral Campo Grande" width="130" height="55">
+    </a>
+    <ul class="nav-links">
+      <li><a href="/">Home</a></li>
+      <li><a href="/#produtos">Produtos</a></li>
+      <li><a href="/bairros/">Bairros</a></li>
+      <li><a href="/#faq">Dúvidas</a></li>
+      <li><a href="https://wa.me/5567991310665?text=Ol%C3%A1%2C%20quero%20pedir%20copo%20200ml" target="_blank" class="nav-wpp">WhatsApp</a></li>
+    </ul>
+    <button class="hamburger" id="hamburger"><span></span><span></span><span></span></button>
+  </nav>
+  <div class="mobile-menu" id="mobile-menu">
+    <a href="/">Home</a>
+    <a href="/#produtos">Produtos</a>
+    <a href="/bairros/">Bairros</a>
+    <a href="https://wa.me/5567991310665" target="_blank">📲 WhatsApp</a>
+  </div>
+</header>
+
+<div class="breadcrumb">
+  <div class="breadcrumb-inner">
+    <a href="/">Home</a> › <a href="/#produtos">Produtos</a> › <span>Copo 200ml</span>
+  </div>
+</div>
+
+<section class="produto-hero">
+  <div class="produto-inner">
+    <div class="produto-img">
+      <img src="/images/copo-200ml.webp" alt="Copo de Água Mineral 200ml - Água Mineral Por do Sol Campo Grande" width="300" height="300">
+    </div>
+    <div class="produto-info">
+      <h1><span>Copo 200ml</span> — Água Mineral Campo Grande</h1>
+      <p class="produto-desc">Caixa com 48 copos de água mineral Por do Sol 200ml. Ideal para eventos, reuniões e consultórios.</p>
+      <div class="produto-detalhes">
+        ✓ Água mineral natural sem gás. Caixa com 48 copos de 200ml cada. Total: 9,6 litros.
+      </div>
+      
+            <div class="preco-card">
+              <div class="preco-item">
+                <div class="preco-label">caixa c/ 48</div>
+                <div class="preco-valor"><sup>R$</sup> 25,00</div>
+                <div class="preco-tag">Entrega rápida</div>
+              </div>
+            </div>
+      <a class="btn-wpp" href="https://wa.me/5567991310665?text=Ol%C3%A1%2C%20quero%20pedir%20Copo%20200ml" target="_blank">
+        <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347zM12 0C5.373 0 0 5.373 0 12c0 2.107.548 4.086 1.508 5.806L0 24l6.362-1.481A11.945 11.945 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0z"/></svg>
+        Pedir pelo WhatsApp
+      </a>
+    </div>
+  </div>
+</section>
+
+<section class="bg-gray">
+  <div class="container">
+    <h2 class="section-title">Dúvidas sobre Copo 200ml</h2>
+    <div class="faq-list">
+      <div class="faq-item">
+        <button class="faq-btn">Qual o preço da caixa de copos?</button>
+        <div class="faq-content">
+          <p>A caixa com 48 copos de 200ml custa R$ 25,00. Cada copinho sai por aproximadamente R$ 0,52.</p>
+        </div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-btn">Quantos copos vêm na caixa?</button>
+        <div class="faq-content">
+          <p>A caixa contém 48 copos de 200ml cada, totalizando 9,6 litros de água mineral.</p>
+        </div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-btn">Os copos são lacrados?</button>
+        <div class="faq-content">
+          <p>Sim! Cada copo vem individualmente lacrado com selo de alumínio, garantindo higiene e segurança.</p>
+        </div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-btn">Ideal para quais ocasiões?</button>
+        <div class="faq-content">
+          <p>Perfeito para reuniões, eventos corporativos, consultórios médicos, salões de beleza e festas.</p>
+        </div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-btn">Posso personalizar com minha marca?</button>
+        <div class="faq-content">
+          <p>Não oferecemos personalização. Os copos vêm com a marca Por do Sol.</p>
+        </div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-btn">Qual a validade dos copos?</button>
+        <div class="faq-content">
+          <p>Os copos lacrados têm validade de 12 meses. Mantenha ao abrigo do sol em local seco.</p>
+        </div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-btn">Entregam em consultórios e clínicas?</button>
+        <div class="faq-content">
+          <p>Sim! Atendemos consultórios, clínicas, hospitais e estabelecimentos de saúde em Campo Grande.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="container">
+    <h2 class="section-title">Produtos Relacionados</h2>
+    <div class="relacionados">
+      <a href="/galao-20-litros/" class="produto-relacionado">
+        <img src="/images/galao-20l.webp" alt="Galão 20 Litros" loading="lazy">
+        <span>Galão 20 Litros</span>
+      </a>
+      <a href="/garrafa-500ml-sem-gas/" class="produto-relacionado">
+        <img src="/images/garrafa-500ml-sem-gas.webp" alt="Garrafa 500ml Sem Gás" loading="lazy">
+        <span>Garrafa 500ml Sem Gás</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<section class="cta-final">
+  <h2>Peça seu Copo 200ml agora!</h2>
+  <p>Entrega rápida em toda Campo Grande. WhatsApp (67) 99131-0665.</p>
+  <a class="btn-wpp" href="https://wa.me/5567991310665?text=Ol%C3%A1%2C%20quero%20pedir%20Copo%20200ml" target="_blank">
+    <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347zM12 0C5.373 0 0 5.373 0 12c0 2.107.548 4.086 1.508 5.806L0 24l6.362-1.481A11.945 11.945 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0z" fill="#fff"/></svg>
+    Pedir pelo WhatsApp
+  </a>
+</section>
+
+<footer>
+  <p>© 2026 Água Mineral Campo Grande — Marca Por do Sol</p>
+  <p>Rua Olímpio Klafke, 635 – Mata do Jacinto – Campo Grande/MS</p>
+  <p><a href="/">Home</a> · <a href="/#produtos">Produtos</a> · <a href="/bairros/">Bairros</a></p>
+</footer>
+
+<a class="float-wpp" href="https://wa.me/5567991310665?text=Ol%C3%A1%2C%20quero%20pedir%20%C3%A1gua%20mineral" target="_blank" aria-label="WhatsApp">
+  <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347zM12 0C5.373 0 0 5.373 0 12c0 2.107.548 4.086 1.508 5.806L0 24l6.362-1.481A11.945 11.945 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0z"/></svg>
+</a>
+
+<script>
+document.querySelectorAll('.faq-btn').forEach(btn => {
+  btn.addEventListener('click', () => {
+    const item = btn.parentElement;
+    const isOpen = item.classList.contains('open');
+    document.querySelectorAll('.faq-item').forEach(i => i.classList.remove('open'));
+    if (!isOpen) item.classList.add('open');
+  });
+});
+document.getElementById('hamburger').addEventListener('click', () => {
+  document.getElementById('mobile-menu').classList.toggle('open');
+});
+</script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Product",
+      "name": "Copo de Água Mineral 200ml",
+      "image": "https://aguamineralcampogrande.com.br/images/copo-200ml.webp",
+      "description": "Caixa com 48 copos de água mineral Por do Sol 200ml. Ideal para eventos, reuniões e consultórios.",
+      "brand": {
+        "@type": "Brand",
+        "name": "Por do Sol"
+      },
+      "offers": {
+        "@type": "Offer",
+        "url": "https://aguamineralcampogrande.com.br/copo-200ml/",
+        "priceCurrency": "BRL",
+        "price": "25.00",
+        "availability": "https://schema.org/InStock",
+        "seller": {
+          "@type": "Organization",
+          "name": "Água Mineral Campo Grande"
+        }
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://aguamineralcampogrande.com.br/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Produtos",
+          "item": "https://aguamineralcampogrande.com.br/#produtos"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Copo 200ml",
+          "item": "https://aguamineralcampogrande.com.br/copo-200ml/"
+        }
+      ]
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Qual o preço da caixa de copos?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "A caixa com 48 copos de 200ml custa R$ 25,00. Cada copinho sai por aproximadamente R$ 0,52."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Quantos copos vêm na caixa?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "A caixa contém 48 copos de 200ml cada, totalizando 9,6 litros de água mineral."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Os copos são lacrados?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Sim! Cada copo vem individualmente lacrado com selo de alumínio, garantindo higiene e segurança."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Ideal para quais ocasiões?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Perfeito para reuniões, eventos corporativos, consultórios médicos, salões de beleza e festas."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Posso personalizar com minha marca?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Não oferecemos personalização. Os copos vêm com a marca Por do Sol."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Qual a validade dos copos?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Os copos lacrados têm validade de 12 meses. Mantenha ao abrigo do sol em local seco."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Entregam em consultórios e clínicas?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Sim! Atendemos consultórios, clínicas, hospitais e estabelecimentos de saúde em Campo Grande."
+          }
+        }
+      ]
+    }
+  ]
+}
+</script>
+
+</body>
+</html>
