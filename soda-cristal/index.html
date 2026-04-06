@@ -1,5 +1,5 @@
 <!--
-  soda-cristal/index.html | Versão: 1.1.0 | Atualizado: 2026-04-05 | Descrição: Soda Cristal 1,5L - Água Mineral Campo Grande
+  soda-cristal/index.html | Versão: 1.2.0 | Atualizado: 2026-04-05 | Descrição: Soda Cristal 1,5L - Água Mineral Campo Grande
 -->
 <!DOCTYPE html>
 <html lang="pt-BR">
@@ -66,17 +66,16 @@
     
     /* Header - IGUAL À HOME */
     header {
-      background: var(--primaria);
-      border-bottom: none;
+      background: var(--branco);
+      border-bottom: 1px solid var(--borda);
       position: sticky;
       top: 0;
       z-index: 100;
-      box-shadow: 0 4px 20px rgba(0,0,0,0.15);
     }
     nav {
       max-width: 1200px;
       margin: 0 auto;
-      padding: 10px 20px;
+      padding: 12px 20px;
       display: flex;
       align-items: center;
       justify-content: space-between;
@@ -84,14 +83,14 @@
     }
     .logo img { height: 55px; width: auto; }
     .nav-links { display: flex; list-style: none; gap: 8px; align-items: center; }
-    .nav-links a { font-size: 14px; font-weight: 600; padding: 10px 18px; border-radius: var(--radius-btn); transition: all 0.3s; color: var(--branco); }
-    .nav-links a:hover { background: rgba(255,255,255,0.15); color: var(--branco); }
+    .nav-links a { font-size: 14px; font-weight: 600; padding: 10px 18px; border-radius: var(--radius-btn); transition: all 0.3s; color: var(--cinza-texto); }
+    .nav-links a:hover { background: var(--primaria-bg); color: var(--primaria); }
     .nav-wpp { background: var(--verde-wpp) !important; color: var(--branco) !important; }
     .hamburger { display: none; flex-direction: column; gap: 5px; cursor: pointer; background: none; border: none; }
-    .hamburger span { width: 26px; height: 3px; background: var(--branco); border-radius: 3px; }
-    .mobile-menu { display: none; background: var(--primaria); padding: 16px 20px; }
+    .hamburger span { width: 26px; height: 3px; background: var(--primaria); border-radius: 3px; }
+    .mobile-menu { display: none; background: var(--branco); padding: 16px 20px; border-top: 1px solid var(--borda); }
     .mobile-menu.open { display: block; }
-    .mobile-menu a { display: block; padding: 12px 0; color: var(--branco); font-weight: 600; border-bottom: 1px solid rgba(255,255,255,0.1); }
+    .mobile-menu a { display: block; padding: 12px 0; color: var(--primaria); font-weight: 600; border-bottom: 1px solid var(--borda); }
     
     /* Breadcrumb */
     .breadcrumb {
@@ -106,10 +105,10 @@
     .breadcrumb a { color: var(--primaria); }
     .breadcrumb span { color: var(--cinza-sub); }
     
-    /* Hero do Produto - FUNDO AZUL IGUAL HOME */
+    /* Hero do Produto - GRADIENTE CLARO IGUAL HOME */
     .produto-hero {
-      background: linear-gradient(135deg, var(--primaria) 0%, var(--primaria-escura) 100%);
-      padding: 60px 20px;
+      background: linear-gradient(180deg, var(--primaria-bg) 0%, var(--branco) 100%);
+      padding: 60px 20px 80px;
     }
     .produto-inner {
       max-width: 1200px;
@@ -133,30 +132,31 @@
     .produto-info h1 {
       font-size: 2rem;
       font-weight: 800;
-      color: var(--branco);
+      color: var(--cinza-texto);
       margin-bottom: 16px;
     }
-    .produto-info h1 span { color: #7dd3fc; }
+    .produto-info h1 span { color: var(--primaria); }
     .produto-desc {
       font-size: 16px;
-      color: rgba(255,255,255,0.9);
+      color: var(--cinza-sub);
       margin-bottom: 24px;
       line-height: 1.7;
     }
     .produto-detalhes {
-      background: rgba(255,255,255,0.15);
+      background: var(--branco);
+      border: 1px solid var(--borda);
       padding: 16px 20px;
       border-radius: var(--radius-btn);
       margin-bottom: 24px;
       font-size: 14px;
-      color: var(--branco);
+      color: var(--cinza-texto);
     }
     
     /* Preço */
     .preco-card {
       display: inline-flex;
       background: var(--branco);
-      border: 2px solid var(--primaria-clara);
+      border: 2px solid var(--primaria);
       border-radius: var(--radius);
       overflow: hidden;
       margin-bottom: 24px;
@@ -328,8 +328,8 @@
 
 <div class="topbar">
   <div class="topbar-inner">
-    <span>📍 Rua Olímpio Klafke, 635 – Mata do Jacinto – Campo Grande/MS</span>
-    <span>🕐 Seg-Sáb: 7h às 18h30 | 📞 (67) 99131-0665</span>
+    <span>🕐 Seg-Sáb: 7h às 18h30</span>
+    <span>📞 (67) 99131-0665</span>
   </div>
 </div>
 
@@ -468,7 +468,7 @@
 
 <footer>
   <p><strong>Água Mineral Campo Grande</strong></p>
-  <p>Rua Olímpio Klafke, 635 – Mata do Jacinto – Campo Grande/MS</p>
+  <p>Entrega em toda Campo Grande/MS</p>
   <p>WhatsApp: <a href="https://wa.me/5567991310665">(67) 99131-0665</a></p>
   <p style="margin-top: 20px; font-size: 12px;">© 2026 Água Mineral Campo Grande. Marca Por do Sol.</p>
 </footer>
