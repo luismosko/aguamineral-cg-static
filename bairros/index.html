@@ -69,6 +69,7 @@
       position: sticky;
       top: 0;
       z-index: 100;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.15);
     }
     nav {
       max-width: 1200px;
@@ -81,8 +82,18 @@
     }
     .logo img { height: 55px; width: auto; }
     .nav-links { display: flex; list-style: none; gap: 8px; align-items: center; }
-    .nav-links a { font-size: 14px; font-weight: 600; padding: 10px 18px; border-radius: var(--radius-btn); transition: all 0.3s; color: var(--branco); }
-    .nav-links a:hover { background: rgba(255,255,255,0.15); color: var(--branco); }
+    .nav-links a {
+      font-size: 14px;
+      font-weight: 600;
+      padding: 10px 18px;
+      border-radius: var(--radius-btn);
+      transition: all 0.3s;
+      color: var(--branco);
+    }
+    .nav-links a:hover {
+      background: rgba(255,255,255,0.15);
+      color: var(--branco);
+    }
     .nav-wpp { background: var(--verde-wpp) !important; color: var(--branco) !important; }
     .hamburger { display: none; flex-direction: column; gap: 5px; cursor: pointer; background: none; border: none; }
     .hamburger span { width: 26px; height: 3px; background: var(--branco); border-radius: 3px; }
@@ -246,8 +257,18 @@
 
 <div class="topbar">
   <div class="topbar-inner">
-    <span>🕐 Seg-Sáb: 7h às 18h30</span>
-    <span>🕐 Seg-Sáb: 7h às 18h30 | 📞 (67) 99131-0665</span>
+    <div class="topbar-item">
+      <svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+      Entrega em toda Campo Grande/MS
+    </div>
+    <div class="topbar-item">
+      <svg viewBox="0 0 24 24"><path d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10 10-4.5 10-10S17.5 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm.5-13H11v6l5.2 3.2.8-1.3-4.5-2.7V7z"/></svg>
+      Seg–Sáb: 7h às 18h30
+    </div>
+    <div class="topbar-item">
+      <svg viewBox="0 0 24 24"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>
+      <strong>(67) 99131-0665</strong>
+    </div>
   </div>
 </div>
 
