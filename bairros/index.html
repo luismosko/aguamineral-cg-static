@@ -1,0 +1,460 @@
+<!--
+  bairros/index.html | Versão: 1.0.0 | Atualizado: 2026-04-05 | Descrição: Hub de bairros atendidos - Água Mineral Campo Grande
+-->
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Entrega de Água Mineral em Campo Grande MS — Todos os Bairros | Água Mineral</title>
+  <meta name="description" content="Entrega de água mineral em todos os bairros de Campo Grande MS. Galão 20L R$ 25. Atendemos Centro, Tiradentes, Jardim dos Estados e mais 80 bairros. WhatsApp (67) 99131-0665.">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://aguamineralcampogrande.com.br/bairros/">
+  
+  <meta property="og:title" content="Entrega de Água Mineral em Campo Grande MS — Todos os Bairros">
+  <meta property="og:description" content="Água mineral com entrega rápida em todos os bairros de Campo Grande. Galão 20L a partir de R$ 25.">
+  <meta property="og:url" content="https://aguamineralcampogrande.com.br/bairros/">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="pt_BR">
+  <meta property="og:image" content="https://aguamineralcampogrande.com.br/images/galao-20l.webp">
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/webp" href="/images/logo.webp">
+  
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    
+    :root {
+      --primaria: #0077b6;
+      --primaria-clara: #00b4d8;
+      --primaria-escura: #023e8a;
+      --primaria-bg: #e0f7fa;
+      --verde-wpp: #25D366;
+      --cinza-bg: #f0f9ff;
+      --cinza-texto: #1e3a5f;
+      --cinza-sub: #5a7a9a;
+      --borda: #b8e0ec;
+      --branco: #ffffff;
+      --radius: 20px;
+      --radius-btn: 14px;
+      --shadow: 0 8px 30px rgba(0,119,182,0.12);
+    }
+    
+    body { font-family: 'Inter', sans-serif; color: var(--cinza-texto); line-height: 1.6; }
+    a { text-decoration: none; color: inherit; }
+    img { max-width: 100%; height: auto; display: block; }
+    
+    /* Header */
+    .topbar {
+      background: linear-gradient(135deg, var(--primaria-escura) 0%, var(--primaria) 100%);
+      color: var(--branco);
+      padding: 10px 20px;
+      font-size: 13px;
+    }
+    .topbar-inner {
+      max-width: 1200px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+    header {
+      background: var(--primaria);
+      border-bottom: none;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+    nav {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 8px 20px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+    }
+    .logo img { height: 55px; width: auto; }
+    .nav-links { display: flex; list-style: none; gap: 8px; align-items: center; }
+    .nav-links a { font-size: 14px; font-weight: 600; padding: 10px 18px; border-radius: var(--radius-btn); transition: all 0.3s; color: var(--branco); }
+    .nav-links a:hover { background: rgba(255,255,255,0.15); color: var(--branco); }
+    .nav-wpp { background: var(--verde-wpp) !important; color: var(--branco) !important; }
+    .hamburger { display: none; flex-direction: column; gap: 5px; cursor: pointer; background: none; border: none; }
+    .hamburger span { width: 26px; height: 3px; background: var(--branco); border-radius: 3px; }
+    .mobile-menu { display: none; background: var(--primaria); padding: 16px 20px; }
+    .mobile-menu.open { display: block; }
+    .mobile-menu a { display: block; padding: 12px 0; color: var(--branco); font-weight: 600; border-bottom: 1px solid rgba(255,255,255,0.1); }
+    
+    /* Breadcrumb */
+    .breadcrumb {
+      background: var(--cinza-bg);
+      padding: 12px 20px;
+      font-size: 13px;
+    }
+    .breadcrumb-inner {
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+    .breadcrumb a { color: var(--primaria); }
+    .breadcrumb span { color: var(--cinza-sub); }
+    
+    /* Hero */
+    .hero {
+      background: linear-gradient(135deg, var(--primaria-bg) 0%, var(--branco) 100%);
+      padding: 60px 20px;
+      text-align: center;
+    }
+    .hero h1 {
+      font-size: 2.2rem;
+      font-weight: 800;
+      color: var(--cinza-texto);
+      margin-bottom: 16px;
+    }
+    .hero h1 span { color: var(--primaria); }
+    .hero p {
+      font-size: 18px;
+      color: var(--cinza-sub);
+      max-width: 600px;
+      margin: 0 auto 24px;
+    }
+    .hero-stats {
+      display: flex;
+      justify-content: center;
+      gap: 40px;
+      flex-wrap: wrap;
+    }
+    .stat {
+      text-align: center;
+    }
+    .stat-num {
+      font-size: 2.5rem;
+      font-weight: 800;
+      color: var(--primaria);
+    }
+    .stat-label {
+      font-size: 14px;
+      color: var(--cinza-sub);
+    }
+    
+    /* Bairros Grid */
+    section { padding: 60px 20px; }
+    .container { max-width: 1200px; margin: 0 auto; }
+    .section-title {
+      font-size: 1.8rem;
+      font-weight: 800;
+      text-align: center;
+      margin-bottom: 40px;
+    }
+    .bg-white { background: var(--branco); }
+    
+    .bairros-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+      gap: 16px;
+    }
+    .bairro-card {
+      background: var(--branco);
+      border: 1px solid var(--borda);
+      border-radius: var(--radius);
+      padding: 20px;
+      text-align: center;
+      transition: all 0.3s;
+    }
+    .bairro-card:hover {
+      border-color: var(--primaria);
+      transform: translateY(-5px);
+      box-shadow: var(--shadow);
+    }
+    .bairro-card h3 {
+      font-size: 16px;
+      font-weight: 700;
+      color: var(--primaria);
+      margin-bottom: 8px;
+    }
+    .bairro-card p {
+      font-size: 13px;
+      color: var(--cinza-sub);
+    }
+    
+    /* CTA */
+    .cta-final {
+      background: linear-gradient(135deg, var(--primaria-escura) 0%, var(--primaria) 100%);
+      padding: 60px 20px;
+      text-align: center;
+    }
+    .cta-final h2 { color: var(--branco); font-size: 1.8rem; margin-bottom: 16px; }
+    .cta-final p { color: rgba(255,255,255,0.9); margin-bottom: 24px; }
+    .btn-wpp {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      background: var(--verde-wpp);
+      color: var(--branco);
+      font-weight: 700;
+      font-size: 16px;
+      padding: 16px 32px;
+      border-radius: var(--radius-btn);
+      transition: all 0.2s;
+    }
+    .btn-wpp:hover { background: #1db954; transform: translateY(-2px); }
+    .btn-wpp svg { width: 22px; height: 22px; fill: currentColor; }
+    
+    /* Footer */
+    footer {
+      background: #0f172a;
+      color: rgba(255,255,255,0.7);
+      padding: 40px 20px;
+      text-align: center;
+    }
+    footer p { font-size: 14px; margin-bottom: 8px; }
+    footer a { color: var(--primaria-clara); }
+    
+    /* Float WhatsApp */
+    .float-wpp {
+      position: fixed;
+      bottom: 30px;
+      right: 30px;
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      background: var(--verde-wpp);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 6px 20px rgba(37,211,102,0.4);
+      z-index: 999;
+      transition: all 0.3s;
+    }
+    .float-wpp:hover { transform: scale(1.1); }
+    .float-wpp svg { width: 32px; height: 32px; fill: var(--branco); }
+    
+    @media (max-width: 768px) {
+      .nav-links { display: none; }
+      .hamburger { display: flex; }
+      .hero h1 { font-size: 1.8rem; }
+      .hero-stats { gap: 20px; }
+      .stat-num { font-size: 2rem; }
+    }
+  </style>
+</head>
+<body>
+
+<div class="topbar">
+  <div class="topbar-inner">
+    <span>📍 Rua Olímpio Klafke, 635 – Mata do Jacinto – Campo Grande/MS</span>
+    <span>🕐 Seg-Sáb: 7h às 18h30 | 📞 (67) 99131-0665</span>
+  </div>
+</div>
+
+<header>
+  <nav>
+    <a href="/" class="logo">
+      <img src="/images/logo.webp" alt="Água Mineral Campo Grande" width="130" height="55">
+    </a>
+    <ul class="nav-links">
+      <li><a href="/">Home</a></li>
+      <li><a href="/#produtos">Produtos</a></li>
+      <li><a href="/bairros/">Bairros</a></li>
+      <li><a href="/#faq">Dúvidas</a></li>
+      <li><a href="https://wa.me/5567991310665?text=Ol%C3%A1%2C%20quero%20pedir%20%C3%A1gua%20mineral" target="_blank" rel="noopener" class="nav-wpp">WhatsApp</a></li>
+    </ul>
+    <button class="hamburger" id="hamburger" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+  <div class="mobile-menu" id="mobile-menu">
+    <a href="/">Home</a>
+    <a href="/#produtos">Produtos</a>
+    <a href="/bairros/">Bairros</a>
+    <a href="/#faq">Dúvidas</a>
+    <a href="https://wa.me/5567991310665?text=Ol%C3%A1%2C%20quero%20pedir%20%C3%A1gua%20mineral" target="_blank">📲 WhatsApp</a>
+  </div>
+</header>
+
+<div class="breadcrumb">
+  <div class="breadcrumb-inner">
+    <a href="/">Home</a> › <span>Bairros Atendidos</span>
+  </div>
+</div>
+
+<section class="hero">
+  <h1><span>Entrega de Água Mineral</span> em Todos os Bairros de Campo Grande</h1>
+  <p>Atendemos toda Campo Grande com entrega rápida. Galão 20 litros a partir de R$ 25,00. Escolha seu bairro abaixo:</p>
+  <div class="hero-stats">
+    <div class="stat">
+      <div class="stat-num">85+</div>
+      <div class="stat-label">Bairros atendidos</div>
+    </div>
+    <div class="stat">
+      <div class="stat-num">1h</div>
+      <div class="stat-label">Tempo médio de entrega</div>
+    </div>
+    <div class="stat">
+      <div class="stat-num">150+</div>
+      <div class="stat-label">Avaliações 5★</div>
+    </div>
+  </div>
+</section>
+
+<section class="bg-white">
+  <div class="container">
+    <h2 class="section-title">Selecione seu Bairro</h2>
+    <div class="bairros-grid">
+      <a href="/bairros/centro/" class="bairro-card">
+        <h3>Centro</h3>
+        <p>Água mineral com entrega</p>
+      </a>
+      <a href="/bairros/tiradentes/" class="bairro-card">
+        <h3>Tiradentes</h3>
+        <p>Água mineral com entrega</p>
+      </a>
+      <a href="/bairros/jardim-dos-estados/" class="bairro-card">
+        <h3>Jardim dos Estados</h3>
+        <p>Água mineral com entrega</p>
+      </a>
+      <a href="/bairros/caranda-bosque/" class="bairro-card">
+        <h3>Carandá Bosque</h3>
+        <p>Água mineral com entrega</p>
+      </a>
+      <a href="/bairros/vila-rica/" class="bairro-card">
+        <h3>Vila Rica</h3>
+        <p>Água mineral com entrega</p>
+      </a>
+      <a href="/bairros/nova-lima/" class="bairro-card">
+        <h3>Nova Lima</h3>
+        <p>Água mineral com entrega</p>
+      </a>
+      <a href="/bairros/mata-do-jacinto/" class="bairro-card">
+        <h3>Mata do Jacinto</h3>
+        <p>Água mineral com entrega</p>
+      </a>
+      <a href="/bairros/aero-rancho/" class="bairro-card">
+        <h3>Aero Rancho</h3>
+        <p>Água mineral com entrega</p>
+      </a>
+      <a href="/bairros/guanandi/" class="bairro-card">
+        <h3>Guanandi</h3>
+        <p>Água mineral com entrega</p>
+      </a>
+      <a href="/bairros/coophavila/" class="bairro-card">
+        <h3>Coophavila</h3>
+        <p>Água mineral com entrega</p>
+      </a>
+      <a href="/bairros/taveiropolis/" class="bairro-card">
+        <h3>Taveirópolis</h3>
+        <p>Água mineral com entrega</p>
+      </a>
+      <a href="/bairros/santa-fe/" class="bairro-card">
+        <h3>Santa Fé</h3>
+        <p>Água mineral com entrega</p>
+      </a>
+      <a href="/bairros/moreninha/" class="bairro-card">
+        <h3>Moreninha</h3>
+        <p>Água mineral com entrega</p>
+      </a>
+      <a href="/bairros/los-angeles/" class="bairro-card">
+        <h3>Los Angeles</h3>
+        <p>Água mineral com entrega</p>
+      </a>
+      <a href="/bairros/monte-castelo/" class="bairro-card">
+        <h3>Monte Castelo</h3>
+        <p>Água mineral com entrega</p>
+      </a>
+      <a href="/bairros/sao-francisco/" class="bairro-card">
+        <h3>São Francisco</h3>
+        <p>Água mineral com entrega</p>
+      </a>
+      <a href="/bairros/pioneiros/" class="bairro-card">
+        <h3>Pioneiros</h3>
+        <p>Água mineral com entrega</p>
+      </a>
+      <a href="/bairros/estrela-dalva/" class="bairro-card">
+        <h3>Estrela Dalva</h3>
+        <p>Água mineral com entrega</p>
+      </a>
+      <a href="/bairros/chacara-cachoeira/" class="bairro-card">
+        <h3>Chácara Cachoeira</h3>
+        <p>Água mineral com entrega</p>
+      </a>
+      <a href="/bairros/universitario/" class="bairro-card">
+        <h3>Universitário</h3>
+        <p>Água mineral com entrega</p>
+      </a>
+      <a href="/bairros/panama/" class="bairro-card">
+        <h3>Panamá</h3>
+        <p>Água mineral com entrega</p>
+      </a>
+      <a href="/bairros/nasser/" class="bairro-card">
+        <h3>Nasser</h3>
+        <p>Água mineral com entrega</p>
+      </a>
+      <a href="/bairros/rita-vieira/" class="bairro-card">
+        <h3>Rita Vieira</h3>
+        <p>Água mineral com entrega</p>
+      </a>
+      <a href="/bairros/coronel-antonino/" class="bairro-card">
+        <h3>Coronel Antonino</h3>
+        <p>Água mineral com entrega</p>
+      </a>
+      <a href="/bairros/vilas-boas/" class="bairro-card">
+        <h3>Vilas Boas</h3>
+        <p>Água mineral com entrega</p>
+      </a>
+    </div>
+  </div>
+</section>
+
+<section class="cta-final">
+  <h2>Não encontrou seu bairro?</h2>
+  <p>Atendemos toda Campo Grande e região! Entre em contato pelo WhatsApp.</p>
+  <a class="btn-wpp" href="https://wa.me/5567991310665?text=Ol%C3%A1%2C%20quero%20saber%20se%20entregam%20no%20meu%20bairro" target="_blank" rel="noopener">
+    <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/></svg>
+    Consultar Entrega
+  </a>
+</section>
+
+<footer>
+  <p><strong>Água Mineral Campo Grande</strong></p>
+  <p>Rua Olímpio Klafke, 635 – Mata do Jacinto – Campo Grande/MS</p>
+  <p>WhatsApp: <a href="https://wa.me/5567991310665">(67) 99131-0665</a></p>
+  <p style="margin-top: 20px; font-size: 12px;">© 2026 Água Mineral Campo Grande. Marca Por do Sol.</p>
+</footer>
+
+<a class="float-wpp" href="https://wa.me/5567991310665?text=Ol%C3%A1%2C%20quero%20pedir%20%C3%A1gua%20mineral" target="_blank" rel="noopener" aria-label="WhatsApp">
+  <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347zM12 0C5.373 0 0 5.373 0 12c0 2.107.548 4.086 1.508 5.806L0 24l6.362-1.481A11.945 11.945 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0z"/></svg>
+</a>
+
+<script>
+  document.getElementById('hamburger').addEventListener('click', () => {
+    document.getElementById('mobile-menu').classList.toggle('open');
+  });
+</script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "name": "Água Mineral Campo Grande",
+  "url": "https://aguamineralcampogrande.com.br/bairros/",
+  "telephone": "+5567991310665",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Rua Olímpio Klafke, 635",
+    "addressLocality": "Campo Grande",
+    "addressRegion": "MS",
+    "postalCode": "79002-180",
+    "addressCountry": "BR"
+  },
+  "areaServed": [
+    {"@type": "City", "name": "Campo Grande"}
+  ]
+}
+</script>
+
+</body>
+</html>
