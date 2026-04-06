@@ -508,21 +508,52 @@
     .produto-desc {
       font-size: 13px;
       color: var(--cinza-sub);
+      margin-bottom: 8px;
+    }
+    
+    .produto-preco {
+      font-size: 18px;
+      font-weight: 800;
+      color: var(--primaria);
       margin-bottom: 14px;
     }
     
+    .produto-btns {
+      display: flex;
+      gap: 8px;
+    }
+    
+    .produto-btn-ver {
+      flex: 1;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      background: var(--primaria-bg);
+      color: var(--primaria);
+      font-size: 12px;
+      font-weight: 700;
+      padding: 10px 12px;
+      border-radius: 50px;
+      transition: all 0.3s;
+    }
+    
+    .produto-btn-ver:hover {
+      background: var(--primaria);
+      color: var(--branco);
+    }
+    
     .produto-btn {
+      flex: 1;
       display: inline-flex;
       align-items: center;
       justify-content: center;
       gap: 6px;
       background: linear-gradient(135deg, var(--verde-wpp) 0%, #1db954 100%);
       color: var(--branco);
-      font-size: 13px;
+      font-size: 12px;
       font-weight: 700;
-      padding: 12px 20px;
+      padding: 10px 12px;
       border-radius: 50px;
-      width: 100%;
       transition: all 0.3s;
     }
     
@@ -1108,106 +1139,114 @@
       
       <!-- Galão 20L -->
       <div class="produto-card">
-        <div class="produto-img">
+        <a href="/galao-20-litros/" class="produto-img">
           <img src="/images/galao-20l.webp" alt="Galão 20 Litros Água Mineral" width="150" height="150" loading="lazy">
-        </div>
-        <h3 class="produto-nome">Galão 20 Litros</h3>
-        <p class="produto-desc">Água mineral sem gás</p>
-        <a class="produto-btn" href="https://wa.me/5567991310665?text=Ol%C3%A1%2C%20quero%20pedir%20Gal%C3%A3o%2020%20Litros" target="_blank" rel="noopener">
-          <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/></svg>
-          Pedir
         </a>
+        <a href="/galao-20-litros/"><h3 class="produto-nome">Galão 20 Litros</h3></a>
+        <p class="produto-desc">Água mineral sem gás</p>
+        <p class="produto-preco">R$ 25,00</p>
+        <div class="produto-btns">
+          <a class="produto-btn-ver" href="/galao-20-litros/">Ver mais</a>
+          <a class="produto-btn" href="https://wa.me/5567991310665?text=Ol%C3%A1%2C%20quero%20pedir%20Gal%C3%A3o%2020%20Litros" target="_blank" rel="noopener">Pedir</a>
+        </div>
       </div>
       
       <!-- Garrafão 5L -->
       <div class="produto-card">
-        <div class="produto-img">
+        <a href="/garrafao-5-litros/" class="produto-img">
           <img src="/images/garrafao-5l.webp" alt="Garrafão 5 Litros Água Mineral" width="150" height="150" loading="lazy">
-        </div>
-        <h3 class="produto-nome">Garrafão 5 Litros</h3>
-        <p class="produto-desc">Descartável, sem gás</p>
-        <a class="produto-btn" href="https://wa.me/5567991310665?text=Ol%C3%A1%2C%20quero%20pedir%20Garraf%C3%A3o%205%20Litros" target="_blank" rel="noopener">
-          <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/></svg>
-          Pedir
         </a>
+        <a href="/garrafao-5-litros/"><h3 class="produto-nome">Garrafão 5 Litros</h3></a>
+        <p class="produto-desc">Descartável, sem gás</p>
+        <p class="produto-preco">R$ 12,00</p>
+        <div class="produto-btns">
+          <a class="produto-btn-ver" href="/garrafao-5-litros/">Ver mais</a>
+          <a class="produto-btn" href="https://wa.me/5567991310665?text=Ol%C3%A1%2C%20quero%20pedir%20Garraf%C3%A3o%205%20Litros" target="_blank" rel="noopener">Pedir</a>
+        </div>
       </div>
       
       <!-- Garrafa 1,5L Sem Gás -->
       <div class="produto-card">
-        <div class="produto-img">
+        <a href="/garrafa-1-5l-sem-gas/" class="produto-img">
           <img src="/images/garrafa-500ml-sem-gas.webp" alt="Garrafa 1,5L Sem Gás - Fardo 6 unidades" width="150" height="150" loading="lazy">
-        </div>
-        <h3 class="produto-nome">Garrafa 1,5L Sem Gás</h3>
-        <p class="produto-desc">Fardo com 6 garrafas</p>
-        <a class="produto-btn" href="https://wa.me/5567991310665?text=Ol%C3%A1%2C%20quero%20pedir%20Garrafa%201%2C5L%20Sem%20G%C3%A1s" target="_blank" rel="noopener">
-          <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/></svg>
-          Pedir
         </a>
+        <a href="/garrafa-1-5l-sem-gas/"><h3 class="produto-nome">Garrafa 1,5L Sem Gás</h3></a>
+        <p class="produto-desc">Fardo com 6 garrafas</p>
+        <p class="produto-preco">R$ 19,00</p>
+        <div class="produto-btns">
+          <a class="produto-btn-ver" href="/garrafa-1-5l-sem-gas/">Ver mais</a>
+          <a class="produto-btn" href="https://wa.me/5567991310665?text=Ol%C3%A1%2C%20quero%20pedir%20Garrafa%201%2C5L%20Sem%20G%C3%A1s" target="_blank" rel="noopener">Pedir</a>
+        </div>
       </div>
       
       <!-- Garrafa 1,5L Com Gás -->
       <div class="produto-card">
-        <div class="produto-img">
+        <a href="/garrafa-1-5l-com-gas/" class="produto-img">
           <img src="/images/garrafa-500ml-com-gas.webp" alt="Garrafa 1,5L Com Gás - Fardo 6 unidades" width="150" height="150" loading="lazy">
-        </div>
-        <h3 class="produto-nome">Garrafa 1,5L Com Gás</h3>
-        <p class="produto-desc">Fardo com 6 garrafas</p>
-        <a class="produto-btn" href="https://wa.me/5567991310665?text=Ol%C3%A1%2C%20quero%20pedir%20Garrafa%201%2C5L%20Com%20G%C3%A1s" target="_blank" rel="noopener">
-          <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/></svg>
-          Pedir
         </a>
+        <a href="/garrafa-1-5l-com-gas/"><h3 class="produto-nome">Garrafa 1,5L Com Gás</h3></a>
+        <p class="produto-desc">Fardo com 6 garrafas</p>
+        <p class="produto-preco">R$ 21,00</p>
+        <div class="produto-btns">
+          <a class="produto-btn-ver" href="/garrafa-1-5l-com-gas/">Ver mais</a>
+          <a class="produto-btn" href="https://wa.me/5567991310665?text=Ol%C3%A1%2C%20quero%20pedir%20Garrafa%201%2C5L%20Com%20G%C3%A1s" target="_blank" rel="noopener">Pedir</a>
+        </div>
       </div>
       
       <!-- Garrafa 500ml Sem Gás -->
       <div class="produto-card">
-        <div class="produto-img">
+        <a href="/garrafa-500ml-sem-gas/" class="produto-img">
           <img src="/images/garrafa-500ml-sem-gas.webp" alt="Garrafa 500ml Sem Gás - Fardo 12 unidades" width="150" height="150" loading="lazy">
-        </div>
-        <h3 class="produto-nome">Garrafa 500ml Sem Gás</h3>
-        <p class="produto-desc">Fardo com 12 garrafas</p>
-        <a class="produto-btn" href="https://wa.me/5567991310665?text=Ol%C3%A1%2C%20quero%20pedir%20Garrafa%20500ml%20Sem%20G%C3%A1s" target="_blank" rel="noopener">
-          <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/></svg>
-          Pedir
         </a>
+        <a href="/garrafa-500ml-sem-gas/"><h3 class="produto-nome">Garrafa 500ml Sem Gás</h3></a>
+        <p class="produto-desc">Fardo com 12 garrafas</p>
+        <p class="produto-preco">R$ 19,00</p>
+        <div class="produto-btns">
+          <a class="produto-btn-ver" href="/garrafa-500ml-sem-gas/">Ver mais</a>
+          <a class="produto-btn" href="https://wa.me/5567991310665?text=Ol%C3%A1%2C%20quero%20pedir%20Garrafa%20500ml%20Sem%20G%C3%A1s" target="_blank" rel="noopener">Pedir</a>
+        </div>
       </div>
       
       <!-- Garrafa 500ml Com Gás -->
       <div class="produto-card">
-        <div class="produto-img">
+        <a href="/garrafa-500ml-com-gas/" class="produto-img">
           <img src="/images/garrafa-500ml-com-gas.webp" alt="Garrafa 500ml Com Gás - Fardo 12 unidades" width="150" height="150" loading="lazy">
-        </div>
-        <h3 class="produto-nome">Garrafa 500ml Com Gás</h3>
-        <p class="produto-desc">Fardo com 12 garrafas</p>
-        <a class="produto-btn" href="https://wa.me/5567991310665?text=Ol%C3%A1%2C%20quero%20pedir%20Garrafa%20500ml%20Com%20G%C3%A1s" target="_blank" rel="noopener">
-          <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/></svg>
-          Pedir
         </a>
+        <a href="/garrafa-500ml-com-gas/"><h3 class="produto-nome">Garrafa 500ml Com Gás</h3></a>
+        <p class="produto-desc">Fardo com 12 garrafas</p>
+        <p class="produto-preco">R$ 21,00</p>
+        <div class="produto-btns">
+          <a class="produto-btn-ver" href="/garrafa-500ml-com-gas/">Ver mais</a>
+          <a class="produto-btn" href="https://wa.me/5567991310665?text=Ol%C3%A1%2C%20quero%20pedir%20Garrafa%20500ml%20Com%20G%C3%A1s" target="_blank" rel="noopener">Pedir</a>
+        </div>
       </div>
       
       <!-- Copo 200ml -->
       <div class="produto-card">
-        <div class="produto-img">
+        <a href="/copo-200ml/" class="produto-img">
           <img src="/images/copo-200ml.webp" alt="Copo 200ml Água Mineral - Caixa 48 unidades" width="150" height="150" loading="lazy">
-        </div>
-        <h3 class="produto-nome">Copo 200ml</h3>
-        <p class="produto-desc">Caixa com 48 copos</p>
-        <a class="produto-btn" href="https://wa.me/5567991310665?text=Ol%C3%A1%2C%20quero%20pedir%20Copo%20200ml" target="_blank" rel="noopener">
-          <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/></svg>
-          Pedir
         </a>
+        <a href="/copo-200ml/"><h3 class="produto-nome">Copo 200ml</h3></a>
+        <p class="produto-desc">Caixa com 48 copos</p>
+        <p class="produto-preco">R$ 48,00</p>
+        <div class="produto-btns">
+          <a class="produto-btn-ver" href="/copo-200ml/">Ver mais</a>
+          <a class="produto-btn" href="https://wa.me/5567991310665?text=Ol%C3%A1%2C%20quero%20pedir%20Copo%20200ml" target="_blank" rel="noopener">Pedir</a>
+        </div>
       </div>
       
       <!-- Soda Cristal -->
       <div class="produto-card">
-        <div class="produto-img">
+        <a href="/soda-cristal/" class="produto-img">
           <img src="/images/soda-cristal.webp" alt="Soda Cristal 1,5L para refrigerante artesanal" width="150" height="150" loading="lazy">
-        </div>
-        <h3 class="produto-nome">Soda Cristal 1,5L</h3>
-        <p class="produto-desc">Para refrigerante artesanal</p>
-        <a class="produto-btn" href="https://wa.me/5567991310665?text=Ol%C3%A1%2C%20quero%20pedir%20Soda%20Cristal" target="_blank" rel="noopener">
-          <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/></svg>
-          Pedir
         </a>
+        <a href="/soda-cristal/"><h3 class="produto-nome">Soda Cristal 1,5L</h3></a>
+        <p class="produto-desc">Para refrigerante artesanal</p>
+        <p class="produto-preco">R$ 15,00</p>
+        <div class="produto-btns">
+          <a class="produto-btn-ver" href="/soda-cristal/">Ver mais</a>
+          <a class="produto-btn" href="https://wa.me/5567991310665?text=Ol%C3%A1%2C%20quero%20pedir%20Soda%20Cristal" target="_blank" rel="noopener">Pedir</a>
+        </div>
       </div>
       
     </div>
