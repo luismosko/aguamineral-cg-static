@@ -1,5 +1,5 @@
 <!--
-  bairros/guanandi/index.html | Versão: 1.0.0 | Atualizado: 2026-04-05 | Descrição: Água Mineral no Guanandi - Campo Grande MS
+  bairros/guanandi/index.html | Versão: 1.1.0 | Atualizado: 2026-07-16 | Descrição: Água Mineral no Guanandi - Campo Grande MS
 -->
 <!DOCTYPE html>
 <html lang="pt-BR">
@@ -19,12 +19,10 @@
   <meta property="og:locale" content="pt_BR">
   <meta property="og:image" content="https://aguamineralcampogrande.com.br/images/galao-20l.webp">
   
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="icon" type="image/webp" href="/images/logo.webp">
   
   <style>
+    @font-face{font-family:'Inter';font-style:normal;font-weight:100 900;font-display:optional;src:url('/fonts/inter-latin-var.woff2') format('woff2');}
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
     
     :root {
@@ -337,6 +335,7 @@
       .hero-badges { justify-content: center; }
     }
   </style>
+  <link rel="preload" href="/fonts/inter-latin-var.woff2" as="font" type="font/woff2" crossorigin>
 </head>
 <body>
 
@@ -411,7 +410,7 @@
       </a>
     </div>
     <div class="hero-img">
-      <img src="/images/galao-20l.webp" alt="Galão de Água Mineral 20 Litros - Entrega no Guanandi" width="350" height="350" loading="eager">
+      <img src="/images/galao-20l.webp" alt="Galão de Água Mineral 20 Litros - Entrega no Guanandi" width="350" height="350" loading="eager" fetchpriority="high">
     </div>
   </div>
 </section>

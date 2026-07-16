@@ -1,5 +1,5 @@
 <!--
-  index.html | Versão: 1.1.0 | Atualizado: 2026-04-05 | Descrição: Logo maior + imagens com fundo transparente
+  index.html | Versão: 1.2.0 | Atualizado: 2026-07-16 | Descrição: Logo maior + imagens com fundo transparente
 -->
 <!DOCTYPE html>
 <html lang="pt-BR">
@@ -24,14 +24,12 @@
   <meta property="og:site_name" content="Água Mineral Campo Grande">
   
   <!-- Fontes -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
   
   <!-- Favicon -->
   <link rel="icon" type="image/webp" href="/images/logo.webp">
   
   <style>
+    @font-face{font-family:'Inter';font-style:normal;font-weight:100 900;font-display:optional;src:url('/fonts/inter-latin-var.woff2') format('woff2');}
     /* ══════════════════════════════════════════════════════════════
        RESET + VARIÁVEIS — TEMA ÁGUA MINERAL
        ══════════════════════════════════════════════════════════════ */
@@ -1027,6 +1025,7 @@
       .footer-grid { grid-template-columns: 1fr; text-align: center; }
     }
   </style>
+  <link rel="preload" href="/fonts/inter-latin-var.woff2" as="font" type="font/woff2" crossorigin>
 </head>
 <body>
 
@@ -1120,7 +1119,7 @@
       </div>
     </div>
     <div class="hero-img">
-      <img src="/images/galao-20l.webp" alt="Galão de Água Mineral 20 Litros Campo Grande MS" width="300" height="400" loading="eager">
+      <img src="/images/galao-20l.webp" alt="Galão de Água Mineral 20 Litros Campo Grande MS" width="300" height="400" loading="eager" fetchpriority="high">
     </div>
   </div>
 </section>
@@ -1481,7 +1480,7 @@
   <div class="footer-inner">
     <div class="footer-grid">
       <div class="footer-brand">
-        <img src="/images/logo.webp" alt="Água Mineral Campo Grande">
+        <img src="/images/logo.webp" alt="Água Mineral Campo Grande" width="130" height="55">
         <p>Água Mineral Campo Grande<br>Rua Olímpio Klafke, 635<br>Mata do Jacinto – Campo Grande/MS<br>WhatsApp: (67) 99131-0665</p>
       </div>
       <div>
