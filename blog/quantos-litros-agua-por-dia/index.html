@@ -1,33 +1,24 @@
-<!--
-  index.html | Versão: 1.3.0 | Atualizado: 2026-07-16 | Descrição: Logo maior + imagens com fundo transparente
--->
 <!DOCTYPE html>
+<!--
+  blog/quantos-litros-agua-por-dia/index.html | Versão: 1.0.0 | Atualizado: 2026-07-16 | Descrição: Post de blog — quantos litros de água por dia
+-->
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  
-  <!-- SEO Principal -->
-  <title>Água Mineral em Campo Grande MS — Galão 20L Entrega Rápida | Disk Água</title>
-  <meta name="description" content="Água mineral em Campo Grande MS. Galão 20 litros, garrafas e copos. Entrega rápida em todos os bairros. WhatsApp (67) 99131-0665. Marca Por do Sol.">
-  <meta name="keywords" content="água mineral campo grande, galão 20 litros, entrega água mineral, água mineral delivery, disk água campo grande">
+  <title>Quantos Litros de Água Beber por Dia? Guia Completo | Campo Grande MS</title>
+  <meta name="description" content="Descubra quantos litros de água beber por dia segundo idade, peso e clima. Guia prático para se manter hidratado no calor de Campo Grande MS.">
   <meta name="robots" content="index, follow">
-  <link rel="canonical" href="https://aguamineralcampogrande.com.br/">
-  
-  <!-- Open Graph -->
-  <meta property="og:title" content="Água Mineral em Campo Grande MS — Galão 20L Entrega Rápida">
-  <meta property="og:description" content="Água mineral em Campo Grande MS. Galão 20 litros, garrafas e copos. Entrega rápida em todos os bairros. WhatsApp (67) 99131-0665.">
-  <meta property="og:url" content="https://aguamineralcampogrande.com.br/">
-  <meta property="og:type" content="website">
+  <link rel="canonical" href="https://aguamineralcampogrande.com.br/blog/quantos-litros-agua-por-dia/">
+  <meta property="og:title" content="Quantos Litros de Água Beber por Dia? Guia Completo | Campo Grande MS">
+  <meta property="og:description" content="Descubra quantos litros de água beber por dia segundo idade, peso e clima. Guia prático para se manter hidratado no calor de Campo Grande MS.">
+  <meta property="og:url" content="https://aguamineralcampogrande.com.br/blog/quantos-litros-agua-por-dia/">
+  <meta property="og:type" content="article">
   <meta property="og:locale" content="pt_BR">
-  <meta property="og:image" content="https://aguamineralcampogrande.com.br/images/galao-20l.webp">
   <meta property="og:site_name" content="Água Mineral Campo Grande">
-  
-  <!-- Fontes -->
-  
-  <!-- Favicon -->
+  <meta property="og:image" content="https://aguamineralcampogrande.com.br/images/logo.webp">
+  <link rel="preload" href="/fonts/inter-latin-var.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="icon" type="image/webp" href="/images/logo.webp">
-  
   <style>
     @font-face{font-family:'Inter';font-style:normal;font-weight:100 900;font-display:optional;src:url('/fonts/inter-latin-var.woff2') format('woff2');}
     /* ══════════════════════════════════════════════════════════════
@@ -1024,34 +1015,50 @@
       .float-wpp { bottom: 20px; right: 20px; width: 58px; height: 58px; }
       .footer-grid { grid-template-columns: 1fr; text-align: center; }
     }
+  
+    /* ===== BLOG ===== */
+    .breadcrumb{max-width:820px;margin:0 auto;padding:24px 20px 0;font-size:13px;color:var(--cinza-sub);}
+    .breadcrumb a{color:var(--primaria);font-weight:600;}
+    .breadcrumb span{margin:0 8px;opacity:.5;}
+    .article-hero{max-width:820px;margin:0 auto;padding:28px 20px 8px;text-align:center;}
+    .article-hero .cat-badge{display:inline-block;background:var(--primaria-bg);color:var(--primaria-escura);font-size:12px;font-weight:700;padding:6px 14px;border-radius:50px;text-transform:uppercase;letter-spacing:.5px;margin-bottom:18px;}
+    .article-hero .emoji{font-size:56px;line-height:1;display:block;margin-bottom:14px;}
+    .article-hero h1{font-size:clamp(1.6rem,4vw,2.4rem);font-weight:800;color:var(--cinza-texto);line-height:1.2;margin-bottom:14px;}
+    .article-meta{font-size:13px;color:var(--cinza-sub);display:flex;gap:16px;justify-content:center;flex-wrap:wrap;}
+    .article-body{max-width:720px;margin:32px auto 0;padding:0 20px;font-size:17px;line-height:1.8;color:var(--cinza-texto);}
+    .article-body h2{font-size:1.35rem;font-weight:800;color:var(--primaria-escura);margin:36px 0 12px;}
+    .article-body p{margin-bottom:18px;}
+    .article-body ul{margin:0 0 20px;padding-left:22px;}
+    .article-body li{margin-bottom:8px;}
+    .article-body strong{color:var(--cinza-texto);}
+    .article-cta{max-width:720px;margin:40px auto;padding:28px 24px;background:linear-gradient(135deg,var(--primaria-bg) 0%,var(--branco) 100%);border:1px solid var(--borda);border-radius:var(--radius);text-align:center;}
+    .article-cta p{font-size:17px;font-weight:600;color:var(--cinza-texto);margin-bottom:18px;}
+    .article-cta .btn-wpp{display:inline-flex;align-items:center;gap:10px;background:var(--verde-wpp);color:#fff;font-weight:700;font-size:16px;padding:15px 30px;border-radius:var(--radius-btn);}
+    .article-cta .btn-wpp svg{width:22px;height:22px;fill:#fff;}
+    .article-nav{max-width:720px;margin:0 auto 60px;padding:0 20px;text-align:center;}
+    .article-nav a{color:var(--primaria);font-weight:700;font-size:15px;}
+    /* índice do blog */
+    .blog-index-hero{background:linear-gradient(135deg,var(--primaria-bg) 0%,var(--branco) 100%);padding:56px 20px 40px;text-align:center;}
+    .blog-index-hero h1{font-size:clamp(1.8rem,4vw,2.6rem);font-weight:800;color:var(--cinza-texto);margin-bottom:12px;}
+    .blog-index-hero p{font-size:17px;color:var(--cinza-sub);max-width:620px;margin:0 auto;}
+    .blog-grid{max-width:1100px;margin:0 auto;padding:48px 20px 72px;display:grid;grid-template-columns:repeat(3,1fr);gap:26px;}
+    .blog-card{background:var(--branco);border:1px solid var(--borda);border-radius:var(--radius);overflow:hidden;display:flex;flex-direction:column;transition:.25s;box-shadow:var(--shadow);}
+    .blog-card:hover{transform:translateY(-5px);box-shadow:var(--shadow-hover);}
+    .blog-card .thumb{height:130px;display:flex;align-items:center;justify-content:center;font-size:52px;background:linear-gradient(135deg,var(--primaria) 0%,var(--primaria-clara) 100%);}
+    .blog-card .card-body{padding:22px;display:flex;flex-direction:column;flex:1;}
+    .blog-card .cat-badge{align-self:flex-start;background:var(--primaria-bg);color:var(--primaria-escura);font-size:11px;font-weight:700;padding:5px 12px;border-radius:50px;text-transform:uppercase;letter-spacing:.4px;margin-bottom:12px;}
+    .blog-card h2{font-size:1.15rem;font-weight:800;color:var(--cinza-texto);line-height:1.3;margin-bottom:10px;}
+    .blog-card p{font-size:14px;color:var(--cinza-sub);line-height:1.6;flex:1;margin-bottom:16px;}
+    .blog-card .card-meta{font-size:12px;color:var(--cinza-sub);display:flex;justify-content:space-between;align-items:center;}
+    .blog-card .read-more{color:var(--primaria);font-weight:700;}
+    .nav-active{color:var(--primaria)!important;font-weight:700!important;}
+    @media(max-width:900px){.blog-grid{grid-template-columns:1fr 1fr;}}
+    @media(max-width:600px){.blog-grid{grid-template-columns:1fr;}.article-body{font-size:16px;}}
+
   </style>
-  <link rel="preload" href="/fonts/inter-latin-var.woff2" as="font" type="font/woff2" crossorigin>
+
 </head>
 <body>
-
-<!-- ══════════════════════════════════════════════════════════════
-     TOPBAR
-     ══════════════════════════════════════════════════════════════ -->
-<div class="topbar">
-  <div class="topbar-inner">
-    <div class="topbar-item">
-      <svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
-      Entrega em toda Campo Grande/MS
-    </div>
-    <div class="topbar-item">
-      <svg viewBox="0 0 24 24"><path d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10 10-4.5 10-10S17.5 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm.5-13H11v6l5.2 3.2.8-1.3-4.5-2.7V7z"/></svg>
-      Seg–Sáb: 7h às 18h30
-    </div>
-    <div class="topbar-item">
-      <svg viewBox="0 0 24 24"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>
-      <strong>(67) 99131-0665</strong>
-    </div>
-  </div>
-</div>
-
-<!-- ══════════════════════════════════════════════════════════════
-     HEADER
-     ══════════════════════════════════════════════════════════════ -->
 <header>
   <nav>
     <a href="/" class="logo">
@@ -1059,10 +1066,10 @@
     </a>
     <ul class="nav-links">
       <li><a href="/">Home</a></li>
-      <li><a href="#produtos">Produtos</a></li>
+      <li><a href="/#produtos">Produtos</a></li>
       <li><a href="/bairros/">Bairros</a></li>
-      <li><a href="/blog/">Blog</a></li>
-      <li><a href="#faq">Dúvidas</a></li>
+      <li><a href="/blog/" class="nav-active">Blog</a></li>
+      <li><a href="/#faq">Dúvidas</a></li>
       <li><a href="https://wa.me/5567991310665?text=Ol%C3%A1%2C%20quero%20pedir%20%C3%A1gua%20mineral" target="_blank" rel="noopener" class="nav-wpp">📲 WhatsApp</a></li>
     </ul>
     <button class="hamburger" id="hamburger" aria-label="Menu">
@@ -1071,413 +1078,47 @@
   </nav>
   <div class="mobile-menu" id="mobile-menu">
     <a href="/">Home</a>
-    <a href="#produtos">Produtos</a>
+    <a href="/#produtos">Produtos</a>
     <a href="/bairros/">Bairros</a>
     <a href="/blog/">Blog</a>
-    <a href="#faq">Dúvidas</a>
+    <a href="/#faq">Dúvidas</a>
     <a href="https://wa.me/5567991310665?text=Ol%C3%A1%2C%20quero%20pedir%20%C3%A1gua%20mineral" target="_blank" rel="noopener">📲 WhatsApp</a>
   </div>
 </header>
 
-<!-- ══════════════════════════════════════════════════════════════
-     HERO
-     ══════════════════════════════════════════════════════════════ -->
-<section class="hero">
-  <div class="hero-inner">
-    <div class="hero-text">
-      <div class="hero-badge">💧 Entrega Rápida em Campo Grande</div>
-      <h1><span>Água Mineral</span> em Campo Grande MS</h1>
-      <p class="hero-desc">Galão 20 litros, garrafas, copos e Soda Cristal. Entregamos água mineral Por do Sol em toda Campo Grande. Atendimento de segunda a sábado, das 7h às 18h30.</p>
-      
-      <div class="hero-stats">
-        <div class="stat-item">
-          <div class="stat-icon">
-            <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>
-          </div>
-          <div class="stat-text">Qualidade<small>Marca Por do Sol</small></div>
-        </div>
-        <div class="stat-item">
-          <div class="stat-icon">
-            <svg viewBox="0 0 24 24"><path d="M18.92 6.01C18.72 5.42 18.16 5 17.5 5h-11c-.66 0-1.21.42-1.42 1.01L3 12v8c0 .55.45 1 1 1h1c.55 0 1-.45 1-1v-1h12v1c0 .55.45 1 1 1h1c.55 0 1-.45 1-1v-8l-2.08-5.99zM6.5 16c-.83 0-1.5-.67-1.5-1.5S5.67 13 6.5 13s1.5.67 1.5 1.5S7.33 16 6.5 16zm11 0c-.83 0-1.5-.67-1.5-1.5s.67-1.5 1.5-1.5 1.5.67 1.5 1.5-.67 1.5-1.5 1.5zM5 11l1.5-4.5h11L19 11H5z"/></svg>
-          </div>
-          <div class="stat-text">Entrega Rápida<small>Em toda cidade</small></div>
-        </div>
-        <div class="stat-item">
-          <div class="stat-icon">
-            <svg viewBox="0 0 24 24"><path d="M11.8 10.9c-2.27-.59-3-1.2-3-2.15 0-1.09 1.01-1.85 2.7-1.85 1.78 0 2.44.85 2.5 2.1h2.21c-.07-1.72-1.12-3.3-3.21-3.81V3h-3v2.16c-1.94.42-3.5 1.68-3.5 3.61 0 2.31 1.91 3.46 4.7 4.13 2.5.6 3 1.48 3 2.41 0 .69-.49 1.79-2.7 1.79-2.06 0-2.87-.92-2.98-2.1h-2.2c.12 2.19 1.76 3.42 3.68 3.83V21h3v-2.15c1.95-.37 3.5-1.5 3.5-3.55 0-2.84-2.43-3.81-4.7-4.4z"/></svg>
-          </div>
-          <div class="stat-text">Melhor Preço<small>Economia garantida</small></div>
-        </div>
-      </div>
-      
-      <div class="hero-btns">
-        <a class="btn-wpp" href="https://wa.me/5567991310665?text=Ol%C3%A1%2C%20quero%20pedir%20%C3%A1gua%20mineral" target="_blank" rel="noopener">
-          <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347zM12 0C5.373 0 0 5.373 0 12c0 2.107.548 4.086 1.508 5.806L0 24l6.362-1.481A11.945 11.945 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0z"/></svg>
-          Pedir pelo WhatsApp
-        </a>
-        <a class="btn-tel" href="tel:+5567991310665">
-          📞 (67) 99131-0665
-        </a>
-      </div>
+<main>
+  <nav class="breadcrumb" aria-label="Trilha">
+    <a href="/">Home</a><span>›</span><a href="/blog/">Blog</a><span>›</span>Quantos litros de água você deve beber por dia?
+  </nav>
+  <article>
+    <div class="article-hero">
+      <span class="cat-badge">Saúde e Hidratação</span>
+      <span class="emoji">💧</span>
+      <h1>Quantos litros de água você deve beber por dia?</h1>
+      <div class="article-meta"><span>📅 16 de jul. de 2026</span><span>⏱️ 5 min de leitura</span><span>💧 Água Mineral Campo Grande</span></div>
     </div>
-    <div class="hero-img">
-      <img src="/images/galao-20l.webp" alt="Galão de Água Mineral 20 Litros Campo Grande MS" width="300" height="400" loading="eager" fetchpriority="high">
+    <div class="article-body">
+      <p>Beber água parece simples, mas quase todo mundo bebe menos do que precisa — especialmente em uma cidade quente como Campo Grande. A pergunta que mais recebemos é direta: afinal, quantos litros de água tomar por dia?</p>
+      <h2>A regra geral: 35 ml por quilo de peso</h2>
+      <p>A recomendação mais usada por nutricionistas é de aproximadamente 35 ml de água por quilo de peso corporal. Na prática:</p>
+      <ul><li>Uma pessoa de 60 kg precisa de cerca de 2,1 litros por dia.</li><li>Uma pessoa de 80 kg precisa de cerca de 2,8 litros por dia.</li><li>Uma pessoa de 100 kg chega perto de 3,5 litros por dia.</li></ul>
+      <p>Esses números incluem apenas a água pura — sucos, café e a água dos alimentos entram como bônus, mas não substituem o consumo direto.</p>
+      <h2>Por que em Campo Grande você precisa beber mais</h2>
+      <p>O clima muda tudo. Em dias de calor intenso e baixa umidade, tão comuns em Mato Grosso do Sul, o corpo perde muito mais líquido pelo suor. Quem trabalha na rua, pratica esportes ou passa horas em ambientes sem ar-condicionado deve somar de 500 ml a 1 litro à conta básica.</p>
+      <h2>Sinais de que você está bebendo pouca água</h2>
+      <ul><li>Urina amarela escura e com odor forte.</li><li>Boca seca e sede frequente.</li><li>Dor de cabeça e cansaço sem motivo aparente.</li><li>Pele ressecada e menos disposição ao longo do dia.</li></ul>
+      <h2>Como facilitar o hábito de beber água</h2>
+      <p>A parte mais difícil não é saber a quantidade, é manter a constância. Ter um galão de 20 litros sempre à mão em casa ou no trabalho é o jeito mais simples de não deixar a água acabar. Quando o galão está cheio e visível, você bebe mais — é psicologia básica de hidratação.</p>
     </div>
-  </div>
-</section>
-
-<!-- ══════════════════════════════════════════════════════════════
-     PRODUTOS
-     ══════════════════════════════════════════════════════════════ -->
-<section class="bg-gray" id="produtos">
-  <div class="container">
-    <div class="section-header">
-      <span class="section-tag">Nossos Produtos</span>
-      <h2 class="section-title">Água Mineral Por do Sol</h2>
-      <p class="section-sub">Trabalhamos com a linha completa de água mineral Para do Sol. Entregamos para residências, empresas e instituições em Campo Grande.</p>
+    <div class="article-cta">
+      <p>Quer manter o galão sempre cheio em casa? Peça sua água mineral pelo WhatsApp e receba rápido em Campo Grande.</p>
+      <a class="btn-wpp" href="https://wa.me/5567991310665?text=Ol%C3%A1%2C%20quero%20pedir%20%C3%A1gua%20mineral" target="_blank" rel="noopener"><svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/></svg> Pedir pelo WhatsApp</a>
     </div>
-    <div class="produtos-grid">
-      
-      <!-- Galão 20L -->
-      <div class="produto-card">
-        <a href="/galao-20-litros/" class="produto-img">
-          <img src="/images/galao-20l.webp" alt="Galão 20 Litros Água Mineral" width="150" height="150" loading="lazy">
-        </a>
-        <a href="/galao-20-litros/"><h3 class="produto-nome">Galão 20 Litros</h3></a>
-        <p class="produto-desc">Água mineral sem gás</p>
-        <p class="produto-preco">R$ 25,00</p>
-        <div class="produto-btns">
-          <a class="produto-btn-ver" href="/galao-20-litros/">Ver mais</a>
-          <a class="produto-btn" href="https://wa.me/5567991310665?text=Ol%C3%A1%2C%20quero%20pedir%20Gal%C3%A3o%2020%20Litros" target="_blank" rel="noopener">Pedir</a>
-        </div>
-      </div>
-      
-      <!-- Garrafão 5L -->
-      <div class="produto-card">
-        <a href="/garrafao-5-litros/" class="produto-img">
-          <img src="/images/garrafao-5l.webp" alt="Garrafão 5 Litros Água Mineral" width="150" height="150" loading="lazy">
-        </a>
-        <a href="/garrafao-5-litros/"><h3 class="produto-nome">Garrafão 5 Litros</h3></a>
-        <p class="produto-desc">Descartável, sem gás</p>
-        <p class="produto-preco">R$ 12,00</p>
-        <div class="produto-btns">
-          <a class="produto-btn-ver" href="/garrafao-5-litros/">Ver mais</a>
-          <a class="produto-btn" href="https://wa.me/5567991310665?text=Ol%C3%A1%2C%20quero%20pedir%20Garraf%C3%A3o%205%20Litros" target="_blank" rel="noopener">Pedir</a>
-        </div>
-      </div>
-      
-      <!-- Garrafa 1,5L Sem Gás -->
-      <div class="produto-card">
-        <a href="/garrafa-1-5l-sem-gas/" class="produto-img">
-          <img src="/images/garrafa-1-5l-sem-gas.webp" alt="Garrafa 1,5L Sem Gás - Fardo 6 unidades" width="150" height="150" loading="lazy">
-        </a>
-        <a href="/garrafa-1-5l-sem-gas/"><h3 class="produto-nome">Garrafa 1,5L Sem Gás</h3></a>
-        <p class="produto-desc">Fardo com 6 garrafas</p>
-        <p class="produto-preco">R$ 19,00</p>
-        <div class="produto-btns">
-          <a class="produto-btn-ver" href="/garrafa-1-5l-sem-gas/">Ver mais</a>
-          <a class="produto-btn" href="https://wa.me/5567991310665?text=Ol%C3%A1%2C%20quero%20pedir%20Garrafa%201%2C5L%20Sem%20G%C3%A1s" target="_blank" rel="noopener">Pedir</a>
-        </div>
-      </div>
-      
-      <!-- Garrafa 1,5L Com Gás -->
-      <div class="produto-card">
-        <a href="/garrafa-1-5l-com-gas/" class="produto-img">
-          <img src="/images/garrafa-1-5l-com-gas.webp" alt="Garrafa 1,5L Com Gás - Fardo 6 unidades" width="150" height="150" loading="lazy">
-        </a>
-        <a href="/garrafa-1-5l-com-gas/"><h3 class="produto-nome">Garrafa 1,5L Com Gás</h3></a>
-        <p class="produto-desc">Fardo com 6 garrafas</p>
-        <p class="produto-preco">R$ 21,00</p>
-        <div class="produto-btns">
-          <a class="produto-btn-ver" href="/garrafa-1-5l-com-gas/">Ver mais</a>
-          <a class="produto-btn" href="https://wa.me/5567991310665?text=Ol%C3%A1%2C%20quero%20pedir%20Garrafa%201%2C5L%20Com%20G%C3%A1s" target="_blank" rel="noopener">Pedir</a>
-        </div>
-      </div>
-      
-      <!-- Garrafa 500ml Sem Gás -->
-      <div class="produto-card">
-        <a href="/garrafa-500ml-sem-gas/" class="produto-img">
-          <img src="/images/garrafa-500ml-sem-gas.webp" alt="Garrafa 500ml Sem Gás - Fardo 12 unidades" width="150" height="150" loading="lazy">
-        </a>
-        <a href="/garrafa-500ml-sem-gas/"><h3 class="produto-nome">Garrafa 500ml Sem Gás</h3></a>
-        <p class="produto-desc">Fardo com 12 garrafas</p>
-        <p class="produto-preco">R$ 19,00</p>
-        <div class="produto-btns">
-          <a class="produto-btn-ver" href="/garrafa-500ml-sem-gas/">Ver mais</a>
-          <a class="produto-btn" href="https://wa.me/5567991310665?text=Ol%C3%A1%2C%20quero%20pedir%20Garrafa%20500ml%20Sem%20G%C3%A1s" target="_blank" rel="noopener">Pedir</a>
-        </div>
-      </div>
-      
-      <!-- Garrafa 500ml Com Gás -->
-      <div class="produto-card">
-        <a href="/garrafa-500ml-com-gas/" class="produto-img">
-          <img src="/images/garrafa-500ml-com-gas.webp" alt="Garrafa 500ml Com Gás - Fardo 12 unidades" width="150" height="150" loading="lazy">
-        </a>
-        <a href="/garrafa-500ml-com-gas/"><h3 class="produto-nome">Garrafa 500ml Com Gás</h3></a>
-        <p class="produto-desc">Fardo com 12 garrafas</p>
-        <p class="produto-preco">R$ 21,00</p>
-        <div class="produto-btns">
-          <a class="produto-btn-ver" href="/garrafa-500ml-com-gas/">Ver mais</a>
-          <a class="produto-btn" href="https://wa.me/5567991310665?text=Ol%C3%A1%2C%20quero%20pedir%20Garrafa%20500ml%20Com%20G%C3%A1s" target="_blank" rel="noopener">Pedir</a>
-        </div>
-      </div>
-      
-      <!-- Copo 200ml -->
-      <div class="produto-card">
-        <a href="/copo-200ml/" class="produto-img">
-          <img src="/images/copo-200ml.webp" alt="Copo 200ml Água Mineral - Caixa 48 unidades" width="150" height="150" loading="lazy">
-        </a>
-        <a href="/copo-200ml/"><h3 class="produto-nome">Copo 200ml</h3></a>
-        <p class="produto-desc">Caixa com 48 copos</p>
-        <p class="produto-preco">R$ 48,00</p>
-        <div class="produto-btns">
-          <a class="produto-btn-ver" href="/copo-200ml/">Ver mais</a>
-          <a class="produto-btn" href="https://wa.me/5567991310665?text=Ol%C3%A1%2C%20quero%20pedir%20Copo%20200ml" target="_blank" rel="noopener">Pedir</a>
-        </div>
-      </div>
-      
-      <!-- Soda Cristal -->
-      <div class="produto-card">
-        <a href="/soda-cristal/" class="produto-img">
-          <img src="/images/soda-cristal.webp" alt="Soda Cristal 1,5L para refrigerante artesanal" width="150" height="150" loading="lazy">
-        </a>
-        <a href="/soda-cristal/"><h3 class="produto-nome">Soda Cristal 1,5L</h3></a>
-        <p class="produto-desc">Para refrigerante artesanal</p>
-        <p class="produto-preco">R$ 15,00</p>
-        <div class="produto-btns">
-          <a class="produto-btn-ver" href="/soda-cristal/">Ver mais</a>
-          <a class="produto-btn" href="https://wa.me/5567991310665?text=Ol%C3%A1%2C%20quero%20pedir%20Soda%20Cristal" target="_blank" rel="noopener">Pedir</a>
-        </div>
-      </div>
-      
+    <div class="article-body" style="margin-top:0">
     </div>
-  </div>
-</section>
-
-<!-- ══════════════════════════════════════════════════════════════
-     POR QUE ESCOLHER
-     ══════════════════════════════════════════════════════════════ -->
-<section class="bg-white">
-  <div class="container">
-    <div class="section-header">
-      <span class="section-tag">Diferenciais</span>
-      <h2 class="section-title">Por que escolher a Água Mineral Campo Grande?</h2>
-    </div>
-    <div class="beneficios-grid">
-      
-      <div class="beneficio-card">
-        <div class="beneficio-icon">
-          <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>
-        </div>
-        <h3>Qualidade Garantida</h3>
-        <p>Água mineral de fonte natural, envasada com rigoroso controle de qualidade.</p>
-      </div>
-      
-      <div class="beneficio-card">
-        <div class="beneficio-icon">
-          <svg viewBox="0 0 24 24"><path d="M18.92 6.01C18.72 5.42 18.16 5 17.5 5h-11c-.66 0-1.21.42-1.42 1.01L3 12v8c0 .55.45 1 1 1h1c.55 0 1-.45 1-1v-1h12v1c0 .55.45 1 1 1h1c.55 0 1-.45 1-1v-8l-2.08-5.99z"/></svg>
-        </div>
-        <h3>Entrega Rápida</h3>
-        <p>Entregamos em toda Campo Grande com rapidez e pontualidade.</p>
-      </div>
-      
-      <div class="beneficio-card">
-        <div class="beneficio-icon">
-          <svg viewBox="0 0 24 24"><path d="M11.8 10.9c-2.27-.59-3-1.2-3-2.15 0-1.09 1.01-1.85 2.7-1.85 1.78 0 2.44.85 2.5 2.1h2.21c-.07-1.72-1.12-3.3-3.21-3.81V3h-3v2.16c-1.94.42-3.5 1.68-3.5 3.61 0 2.31 1.91 3.46 4.7 4.13 2.5.6 3 1.48 3 2.41 0 .69-.49 1.79-2.7 1.79-2.06 0-2.87-.92-2.98-2.1h-2.2c.12 2.19 1.76 3.42 3.68 3.83V21h3v-2.15c1.95-.37 3.5-1.5 3.5-3.55 0-2.84-2.43-3.81-4.7-4.4z"/></svg>
-        </div>
-        <h3>Melhor Preço</h3>
-        <p>Preços competitivos com a qualidade que você merece.</p>
-      </div>
-      
-      <div class="beneficio-card">
-        <div class="beneficio-icon">
-          <svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z"/></svg>
-        </div>
-        <h3>Cobertura Total</h3>
-        <p>Atendemos residências, empresas e instituições em toda a cidade.</p>
-      </div>
-      
-      <div class="beneficio-card">
-        <div class="beneficio-icon">
-          <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/></svg>
-        </div>
-        <h3>Pedido Fácil</h3>
-        <p>Faça seu pedido pelo WhatsApp de forma rápida e prática.</p>
-      </div>
-      
-      <div class="beneficio-card">
-        <div class="beneficio-icon">
-          <svg viewBox="0 0 24 24"><path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4z"/></svg>
-        </div>
-        <h3>Confiança</h3>
-        <p>Compromisso com segurança, qualidade e pontualidade.</p>
-      </div>
-      
-    </div>
-  </div>
-</section>
-
-<!-- ══════════════════════════════════════════════════════════════
-     COMO FUNCIONA
-     ══════════════════════════════════════════════════════════════ -->
-<section class="bg-gray">
-  <div class="container">
-    <div class="section-header">
-      <span class="section-tag">Simples e Rápido</span>
-      <h2 class="section-title">Como pedir sua Água Mineral</h2>
-    </div>
-    <div class="steps-grid">
-      <div class="step-card">
-        <div class="step-num">1</div>
-        <h3>Envie Mensagem</h3>
-        <p>Clique no botão do WhatsApp e envie seu pedido com endereço completo.</p>
-      </div>
-      <div class="step-card">
-        <div class="step-num">2</div>
-        <h3>Confirmação</h3>
-        <p>Confirmamos seu pedido e informamos o tempo de entrega.</p>
-      </div>
-      <div class="step-card">
-        <div class="step-num">3</div>
-        <h3>Receba em Casa</h3>
-        <p>Entregamos na sua porta com rapidez e segurança.</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ══════════════════════════════════════════════════════════════
-     BAIRROS ATENDIDOS
-     ══════════════════════════════════════════════════════════════ -->
-<section class="bg-white" id="bairros">
-  <div class="container">
-    <div class="section-header">
-      <span class="section-tag">Cobertura</span>
-      <h2 class="section-title">Bairros Atendidos em Campo Grande</h2>
-      <p class="section-sub">Entregamos água mineral em toda Campo Grande e região</p>
-    </div>
-    <div class="bairros-grid">
-      <span class="bairro-tag">Centro</span>
-      <span class="bairro-tag">Carandá Bosque</span>
-      <span class="bairro-tag">Giocondo Orsi</span>
-      <span class="bairro-tag">Autonomista</span>
-      <span class="bairro-tag">Vila Rica</span>
-      <span class="bairro-tag">Santa Fé</span>
-      <span class="bairro-tag">Jardim dos Estados</span>
-      <span class="bairro-tag">Vila Margarida</span>
-      <span class="bairro-tag">Novos Estados</span>
-      <span class="bairro-tag">Mata do Jacinto</span>
-      <span class="bairro-tag">Montevidéu</span>
-      <span class="bairro-tag">Estrela Dalva</span>
-      <span class="bairro-tag">Nova Lima</span>
-      <span class="bairro-tag">Jardim Presidente</span>
-      <span class="bairro-tag">Columbia</span>
-      <span class="bairro-tag">Tiradentes</span>
-      <span class="bairro-tag">Coophavila</span>
-      <span class="bairro-tag">Pioneiros</span>
-      <span class="bairro-tag">Monte Castelo</span>
-      <span class="bairro-tag">São Francisco</span>
-      <span class="bairro-tag">+ Toda CG</span>
-    </div>
-  </div>
-</section>
-
-<!-- ══════════════════════════════════════════════════════════════
-     SOBRE / MISSÃO
-     ══════════════════════════════════════════════════════════════ -->
-<section class="bg-gray">
-  <div class="container">
-    <div class="section-header">
-      <span class="section-tag">Nossa Missão</span>
-      <h2 class="section-title">Sobre a Água Mineral Campo Grande</h2>
-    </div>
-    <div class="sobre-content">
-      <p>Nossa missão é <strong>distribuir água mineral de qualidade</strong>, atendendo às necessidades e expectativas dos nossos clientes, com ênfase na <strong>segurança, qualidade, pontualidade, competitividade e rentabilidade</strong>.</p>
-      <p>Trabalhamos com a marca <strong>Por do Sol</strong>, água mineral natural envasada com rigoroso controle de qualidade. Atendemos residências, empresas e instituições em toda Campo Grande/MS.</p>
-    </div>
-  </div>
-</section>
-
-<!-- ══════════════════════════════════════════════════════════════
-     FAQ
-     ══════════════════════════════════════════════════════════════ -->
-<section class="bg-white" id="faq">
-  <div class="container">
-    <div class="section-header">
-      <span class="section-tag">Dúvidas</span>
-      <h2 class="section-title">Perguntas Frequentes</h2>
-      <p class="section-sub">Tire suas dúvidas sobre água mineral em Campo Grande</p>
-    </div>
-    <div class="faq-list">
-      
-      <div class="faq-item">
-        <button class="faq-btn">Quais produtos de água mineral vocês entregam?</button>
-        <div class="faq-content">
-          <p>Trabalhamos com a linha completa de água mineral <strong>Por do Sol</strong>: galão 20 litros, garrafão 5 litros, garrafas 1,5L e 500ml (com e sem gás), copos 200ml e Soda Cristal 1,5L para refrigerante artesanal.</p>
-        </div>
-      </div>
-      
-      <div class="faq-item">
-        <button class="faq-btn">Qual o horário de atendimento?</button>
-        <div class="faq-content">
-          <p>Atendemos de <strong>segunda a sábado, das 7h às 18h30</strong>. Faça seu pedido pelo WhatsApp <strong>(67) 99131-0665</strong>.</p>
-        </div>
-      </div>
-      
-      <div class="faq-item">
-        <button class="faq-btn">Quais bairros de Campo Grande vocês atendem?</button>
-        <div class="faq-content">
-          <p>Atendemos <strong>toda Campo Grande e região</strong>, incluindo: Centro, Carandá Bosque, Giocondo Orsi, Autonomista, Vila Rica, Santa Fé, Jardim dos Estados, Vila Margarida, Novos Estados, Mata do Jacinto, Montevidéu, Estrela Dalva, Nova Lima, Jardim Presidente, Columbia, Tiradentes e muito mais!</p>
-        </div>
-      </div>
-      
-      <div class="faq-item">
-        <button class="faq-btn">Como faço para pedir água mineral?</button>
-        <div class="faq-content">
-          <p>É muito simples! Basta enviar uma mensagem pelo <strong>WhatsApp (67) 99131-0665</strong> informando o produto desejado e seu endereço completo. Confirmamos o pedido e entregamos rapidamente.</p>
-        </div>
-      </div>
-      
-      <div class="faq-item">
-        <button class="faq-btn">Vocês atendem empresas e instituições?</button>
-        <div class="faq-content">
-          <p>Sim! Atendemos <strong>residências, empresas e instituições</strong> em Campo Grande. Temos condições especiais para pedidos recorrentes e em maior quantidade.</p>
-        </div>
-      </div>
-      
-      <div class="faq-item">
-        <button class="faq-btn">O que é Soda Cristal?</button>
-        <div class="faq-content">
-          <p>A <strong>Soda Cristal</strong> é uma água gaseificada especial para você fazer seu <strong>refrigerante artesanal em casa</strong>. Basta misturar com xaropes de sua preferência para criar bebidas deliciosas, mais saudáveis e saborosas!</p>
-        </div>
-      </div>
-      
-      <div class="faq-item">
-        <button class="faq-btn">Qual a qualidade da água Por do Sol?</button>
-        <div class="faq-content">
-          <p>A água mineral <strong>Por do Sol</strong> é extraída de fonte natural e envasada com rigoroso <strong>controle de qualidade</strong>. É uma água pura, leve e ideal para o consumo diário de toda a família.</p>
-        </div>
-      </div>
-      
-    </div>
-  </div>
-</section>
-
-<!-- ══════════════════════════════════════════════════════════════
-     CTA FINAL
-     ══════════════════════════════════════════════════════════════ -->
-<section class="cta-final">
-  <h2>Precisa de Água Mineral em Campo Grande?</h2>
-  <p>Entregamos galão 20 litros, garrafas e copos em toda a cidade. Atendimento de segunda a sábado, das 7h às 18h30.</p>
-  <a class="btn-wpp" href="https://wa.me/5567991310665?text=Ol%C3%A1%2C%20quero%20pedir%20%C3%A1gua%20mineral" target="_blank" rel="noopener">
-    <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/></svg>
-    Pedir pelo WhatsApp
-  </a>
-</section>
-
-<!-- ══════════════════════════════════════════════════════════════
-     FOOTER
-     ══════════════════════════════════════════════════════════════ -->
+    <div class="article-nav"><a href="/blog/">← Voltar para o Blog</a></div>
+  </article>
+</main>
 <footer>
   <div class="footer-inner">
     <div class="footer-grid">
@@ -1489,18 +1130,18 @@
         <div class="footer-title">Navegação</div>
         <div class="footer-links">
           <a href="/">Home</a>
-          <a href="#produtos">Produtos</a>
+          <a href="/#produtos">Produtos</a>
           <a href="/bairros/">Bairros</a>
-          <a href="#faq">Dúvidas</a>
+          <a href="/#faq">Dúvidas</a>
         </div>
       </div>
       <div>
         <div class="footer-title">Produtos</div>
         <div class="footer-links">
-          <a href="#produtos">Galão 20L</a>
-          <a href="#produtos">Garrafas</a>
-          <a href="#produtos">Copos</a>
-          <a href="#produtos">Soda Cristal</a>
+          <a href="/#produtos">Galão 20L</a>
+          <a href="/#produtos">Garrafas</a>
+          <a href="/#produtos">Copos</a>
+          <a href="/#produtos">Soda Cristal</a>
         </div>
       </div>
       <div>
@@ -1519,8 +1160,6 @@
   </div>
 </footer>
 
-<!-- ══════════════════════════════════════════════════════════════
-     FLOAT WHATSAPP
      ══════════════════════════════════════════════════════════════ -->
 <a class="float-wpp" href="https://wa.me/5567991310665?text=Ol%C3%A1%2C%20quero%20pedir%20%C3%A1gua%20mineral" target="_blank" rel="noopener" aria-label="WhatsApp">
   <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347zM12 0C5.373 0 0 5.373 0 12c0 2.107.548 4.086 1.508 5.806L0 24l6.362-1.481A11.945 11.945 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-1.89 0-3.653-.518-5.16-1.419l-.37-.22-3.777.88.898-3.678-.242-.378A9.96 9.96 0 012 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10z"/></svg>
@@ -1547,108 +1186,32 @@
 </script>
 
 <!-- ══════════════════════════════════════════════════════════════
-     SCHEMA.ORG
-     ══════════════════════════════════════════════════════════════ -->
+
 <script type="application/ld+json">
 {
-  "@context": "https://schema.org",
-  "@graph": [
-    {
-      "@type": "LocalBusiness",
-      "name": "Água Mineral Campo Grande",
-      "image": "https://aguamineralcampogrande.com.br/images/logo.webp",
-      "url": "https://aguamineralcampogrande.com.br/",
-      "telephone": "+5567991310665",
-      "address": {
-        "@type": "PostalAddress",
-        "streetAddress": "Rua Olímpio Klafke, 635",
-        "addressLocality": "Campo Grande",
-        "addressRegion": "MS",
-        "postalCode": "79040-280",
-        "addressCountry": "BR"
-      },
-      "geo": {
-        "@type": "GeoCoordinates",
-        "latitude": -20.4697,
-        "longitude": -54.6201
-      },
-      "openingHoursSpecification": {
-        "@type": "OpeningHoursSpecification",
-        "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
-        "opens": "07:00",
-        "closes": "18:30"
-      },
-      "priceRange": "R$ 10 - R$ 50",
-      "areaServed": {
-        "@type": "City",
-        "name": "Campo Grande"
-      },
-      "description": "Distribuição de água mineral Por do Sol em Campo Grande MS. Galão 20 litros, garrafas, copos e Soda Cristal. Entrega rápida em toda a cidade."
-    },
-    {
-      "@type": "FAQPage",
-      "mainEntity": [
-        {
-          "@type": "Question",
-          "name": "Quais produtos de água mineral vocês entregam?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Trabalhamos com a linha completa de água mineral Por do Sol: galão 20 litros, garrafão 5 litros, garrafas 1,5L e 500ml (com e sem gás), copos 200ml e Soda Cristal 1,5L para refrigerante artesanal."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Qual o horário de atendimento?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Atendemos de segunda a sábado, das 7h às 18h30. Faça seu pedido pelo WhatsApp (67) 99131-0665."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Quais bairros de Campo Grande vocês atendem?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Atendemos toda Campo Grande e região, incluindo: Centro, Carandá Bosque, Giocondo Orsi, Autonomista, Vila Rica, Santa Fé, Jardim dos Estados, Vila Margarida, Novos Estados, Mata do Jacinto, Montevidéu, Estrela Dalva, Nova Lima, Jardim Presidente, Columbia, Tiradentes e muito mais!"
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Como faço para pedir água mineral?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "É muito simples! Basta enviar uma mensagem pelo WhatsApp (67) 99131-0665 informando o produto desejado e seu endereço completo. Confirmamos o pedido e entregamos rapidamente."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Vocês atendem empresas e instituições?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Sim! Atendemos residências, empresas e instituições em Campo Grande. Temos condições especiais para pedidos recorrentes e em maior quantidade."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "O que é Soda Cristal?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "A Soda Cristal é uma água gaseificada especial para você fazer seu refrigerante artesanal em casa. Basta misturar com xaropes de sua preferência para criar bebidas deliciosas, mais saudáveis e saborosas!"
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Qual a qualidade da água Por do Sol?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "A água mineral Por do Sol é extraída de fonte natural e envasada com rigoroso controle de qualidade. É uma água pura, leve e ideal para o consumo diário de toda a família."
-          }
-        }
-      ]
-    }
+  "@context":"https://schema.org",
+  "@type":"BlogPosting",
+  "headline":"Quantos litros de água você deve beber por dia?",
+  "description":"Descubra quantos litros de água beber por dia segundo idade, peso e clima. Guia prático para se manter hidratado no calor de Campo Grande MS.",
+  "image":"https://aguamineralcampogrande.com.br/images/logo.webp",
+  "datePublished":"2026-07-16",
+  "dateModified":"2026-07-16",
+  "inLanguage":"pt-BR",
+  "author":{"@type":"Organization","name":"Água Mineral Campo Grande"},
+  "publisher":{"@type":"Organization","name":"Água Mineral Campo Grande","logo":{"@type":"ImageObject","url":"https://aguamineralcampogrande.com.br/images/logo.webp"}},
+  "mainEntityOfPage":{"@type":"WebPage","@id":"https://aguamineralcampogrande.com.br/blog/quantos-litros-agua-por-dia/"}
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"BreadcrumbList",
+  "itemListElement":[
+    {"@type":"ListItem","position":1,"name":"Home","item":"https://aguamineralcampogrande.com.br/"},
+    {"@type":"ListItem","position":2,"name":"Blog","item":"https://aguamineralcampogrande.com.br/blog/"},
+    {"@type":"ListItem","position":3,"name":"Quantos litros de água você deve beber por dia?","item":"https://aguamineralcampogrande.com.br/blog/quantos-litros-agua-por-dia/"}
   ]
 }
 </script>
-
 </body>
 </html>
