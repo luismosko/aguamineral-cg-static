@@ -1,5 +1,5 @@
 <!--
-  garrafa-1-5l-com-gas/index.html | Versão: 1.4.0 | Atualizado: 2026-07-16 | Descrição: Garrafa 1,5L Com Gás - Água Mineral Campo Grande
+  garrafa-1-5l-com-gas/index.html | Versão: 1.5.0 | Atualizado: 2026-07-16 | Descrição: Garrafa 1,5L Com Gás - Água Mineral Campo Grande
 -->
 <!DOCTYPE html>
 <html lang="pt-BR">
@@ -593,7 +593,22 @@
         "price": "21.00",
         "priceCurrency": "BRL",
         "availability": "https://schema.org/InStock",
-        "seller": {"@type": "Organization", "name": "Água Mineral Campo Grande"}
+        "seller": {"@type": "Organization", "name": "Água Mineral Campo Grande"},
+        "hasMerchantReturnPolicy": {
+          "@type": "MerchantReturnPolicy",
+          "applicableCountry": "BR",
+          "returnPolicyCategory": "https://schema.org/MerchantReturnNotPermitted"
+        },
+        "shippingDetails": {
+          "@type": "OfferShippingDetails",
+          "shippingRate": {"@type": "MonetaryAmount", "value": "0", "currency": "BRL"},
+          "shippingDestination": {"@type": "DefinedRegion", "addressCountry": "BR", "addressRegion": "MS"},
+          "deliveryTime": {
+            "@type": "ShippingDeliveryTime",
+            "handlingTime": {"@type": "QuantitativeValue", "minValue": 0, "maxValue": 0, "unitCode": "DAY"},
+            "transitTime": {"@type": "QuantitativeValue", "minValue": 0, "maxValue": 1, "unitCode": "DAY"}
+          }
+        }
       }
     },
     {
