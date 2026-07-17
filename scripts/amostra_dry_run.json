@@ -1,0 +1,14 @@
+{
+  "title": "Post de Teste — Pipeline do Gerador (dry-run)",
+  "meta_description": "Amostra de teste do gerador diário de posts em Campo Grande. Não indexar.",
+  "corpo_html": "<p>Este é um post de <strong>demonstração</strong> gerado pelo modo dry-run, sem chamar a API. Serve só para validar o pipeline: template, injeção de FAQ, CTA, sitemap e índice.</p><h2>Como funciona a entrega</h2><p>Atendemos toda Campo Grande, incluindo Centro, Carandá Bosque e Mata do Jacinto, em geral em até 1 hora.</p><table><thead><tr><th>Produto</th><th>Preço</th></tr></thead><tbody><tr><td>Galão 20L (refil)</td><td>R$ 12,00</td></tr><tr><td>Galão 20L (com vasilhame)</td><td>R$ 25,00</td></tr></tbody></table><h2>Passos para pedir</h2><ol><li>Mande o endereço no WhatsApp.</li><li>Confirmamos o valor e o prazo.</li><li>Você recebe na porta.</li></ol>",
+  "faq": [
+    {"q": "Vocês entregam no mesmo dia?", "a": "Sim, na maior parte dos bairros a entrega sai em até 1 hora."},
+    {"q": "Qual o preço do galão 20 litros?", "a": "O refil sai a partir de R$ 12,00; com vasilhame, R$ 25,00."},
+    {"q": "Quais formas de pagamento?", "a": "Pix, dinheiro e cartão na entrega."},
+    {"q": "Atendem empresas?", "a": "Sim, com fornecimento programado para escritórios e comércios."},
+    {"q": "A água é de qualidade?", "a": "Sim, água mineral da marca Por do Sol, de fonte registrada."},
+    {"q": "Como funciona o galão retornável?", "a": "Você devolve o vasilhame vazio e paga só a recarga."},
+    {"q": "Quais bairros vocês atendem?", "a": "Toda Campo Grande, incluindo Centro, Aero Rancho e Tiradentes."}
+  ]
+}

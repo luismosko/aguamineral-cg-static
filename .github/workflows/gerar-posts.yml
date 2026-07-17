@@ -1,0 +1,55 @@
+name: Gerar post diário (água)
+
+on:
+  workflow_dispatch:
+    inputs:
+      publicar:
+        description: 'Publicar direto? 1 = publica (padrão) · 0 = rascunho'
+        required: false
+        default: '1'
+  schedule:
+    - cron: '0 11 * * *'   # 08:00 Campo Grande (UTC-3) — diário: gera, PUBLICA e manda email
+
+permissions:
+  contents: write
+
+jobs:
+  gerar:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Gerar post
+        id: gerar
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          IZGLP_PRECO_URL:   ${{ secrets.IZGLP_PRECO_URL }}
+          PUBLICAR:          ${{ github.event.inputs.publicar || '1' }}
+        run: python3 scripts/gerar_post.py
+
+      - name: Commitar
+        run: |
+          git config user.name "Água CG Bot"
+          git config user.email "bot@aguamineralcampogrande.com.br"
+          git add blog/ sitemap.xml llms.txt 2>/dev/null || true
+          if git diff --cached --quiet; then
+            echo "Nada novo para commitar."
+          else
+            git commit -m "blog: gera post diário ($(date +%F))"
+            git push
+          fi
+
+      - name: Notificar por email
+        if: ${{ steps.gerar.outputs.published == '1' }}
+        env:
+          RESEND_API_KEY: ${{ secrets.RESEND_API_KEY }}
+          MAIL_TO:        ${{ secrets.MAIL_TO || 'luismosko@gmail.com' }}
+          POST_TITLE:     ${{ steps.gerar.outputs.title }}
+          POST_URL:       ${{ steps.gerar.outputs.url }}
+        run: python3 scripts/enviar_email.py
