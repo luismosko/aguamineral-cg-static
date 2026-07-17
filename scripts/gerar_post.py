@@ -9,8 +9,11 @@ DEFAULT-DENY / SEGURANÇA (allowlist explícita):
     Só é publicado com PUBLICAR=1 (o cron passa PUBLICAR=1).
   - Preço NUNCA é inventado: vem de scripts/preco_config.json (fonte da verdade).
     Se um dia houver um Worker izGLP de preço, basta setar IZGLP_PRECO_URL.
-  - Guard-rail de anti-temas: barra tema fora da allowlist (ex.: "como fazer água
-    mineral caseira", pH de marca concorrente).
+  - ESCOPO EDITORIAL (allowlist): só publica sobre ÁGUA MINERAL, HIDRATAÇÃO,
+    SAÚDE ligada ao consumo de água e temas diretamente relacionados (galão,
+    garrafão, garrafas, água com/sem gás, bebedouro, entrega, casa/empresas).
+    Tema fora do escopo é barrado (allowlist ESCOPO_PERMITIDO) — fechado por
+    padrão. Denylist ANTITEMAS barra casos-borda (água caseira, marca concorrente).
   - Link editorial pra money-page, FAQ e CTA são INJETADOS de forma determinística.
 
 Uso:
@@ -51,6 +54,19 @@ CAT_LABEL = {"galao": "Galão & Entrega", "garrafao": "Garrafão", "gas": "Água
              "empresas": "Para Empresas", "geral": "Água & Saúde"}
 
 # ── guard-rail: temas barrados (defense-in-depth) ────────────────────────────
+# ── ESCOPO EDITORIAL (ALLOWLIST) — default-deny ──────────────────────────────
+# O blog só publica sobre ÁGUA MINERAL, HIDRATAÇÃO, SAÚDE ligada ao consumo de
+# água e temas DIRETAMENTE relacionados (galão, garrafão, garrafas, bebedouro,
+# entrega, uso em casa/empresas). Um tema só é aceito se casar com pelo menos um
+# termo desta allowlist. Qualquer assunto fora disso é barrado — mesmo que entre
+# na fila por engano. Fechado por padrão; abre só o que é do escopo.
+ESCOPO_PERMITIDO = [
+    r"[aá]gua", r"hidrat", r"desidrat", r"gal[aã]o", r"garraf[aã]o", r"garrafa",
+    r"bebedouro", r"mineral", r"vasilhame", r"\blitro", r"\bcopo", r"beber",
+    r"\bsede\b", r"\bph\b", r"s[oó]dio", r"gaseific", r"com\s+g[aá]s", r"po[çc]o\s+art",
+]
+
+# ── ANTI-TEMAS (denylist adicional, defense-in-depth) ────────────────────────
 ANTITEMAS = [
     r"como\s+(fazer|produzir|fabricar)\s+[aá]gua\s+mineral",
     r"[aá]gua\s+mineral\s+caseira", r"purificar\s+[aá]gua\s+em\s+casa",
@@ -85,7 +101,12 @@ def proximo_tema():
     fila = json.load(open(os.path.join(ROOT, "scripts", "fila_temas.json"), encoding="utf-8"))
     for t in fila:
         slug = t["slug"]
-        if any(re.search(p, (t["tema"] + " " + slug).lower()) for p in ANTITEMAS):
+        texto = (t["tema"] + " " + slug).lower()
+        # ALLOWLIST: precisa estar no escopo (água/hidratação/saúde hídrica/relacionados)
+        if not any(re.search(p, texto) for p in ESCOPO_PERMITIDO):
+            print(f"  ⨯ fora do escopo editorial (água/saúde): {slug}", file=sys.stderr); continue
+        # DENYLIST: barra casos-borda mesmo dentro do escopo
+        if any(re.search(p, texto) for p in ANTITEMAS):
             print(f"  ⨯ guard-rail barrou tema: {slug}", file=sys.stderr); continue
         if not os.path.isdir(os.path.join(ROOT, "blog", slug)):
             return t
@@ -93,6 +114,8 @@ def proximo_tema():
 
 
 SYSTEM = """Você é redator SEO local da Água Mineral Campo Grande — distribuidora de água mineral da marca Por do Sol em Campo Grande/MS. WhatsApp (67) 99131-0665. Rua Olímpio Klafke, 635 – Mata do Jacinto. Seg–Sáb 7h às 18h30. Mais de 150 avaliações 4,9★ no Google. Vende galão 20L (refil e com vasilhame), garrafão 5L, garrafas 500ml e 1,5L (com e sem gás), soda e copos, com entrega rápida.
+
+ESCOPO EDITORIAL (obrigatório): escreva SOMENTE sobre água mineral, hidratação, saúde ligada ao consumo de água, e temas diretamente relacionados — galão, garrafão, garrafas, água com/sem gás, bebedouro, armazenamento, entrega, e uso de água em casa e em empresas. NUNCA escreva sobre assuntos fora desse escopo (gás de cozinha, outros produtos, saúde não ligada à hidratação, política, tecnologia etc.). Se o tema recebido parecer fugir do escopo, mantenha o texto ancorado em água mineral e hidratação em Campo Grande.
 
 Escreva um artigo de blog em pt-BR, tom claro e útil, para o tema dado. Regras OBRIGATÓRIAS:
 - Foco em quem VAI COMPRAR/CONSUMIR água em Campo Grande. Nada de "como fazer água mineral caseira", nada de citar marca concorrente.
