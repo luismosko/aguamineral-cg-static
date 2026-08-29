@@ -26,7 +26,7 @@ body = json.dumps({
     "html": html,
 }).encode()
 req = urllib.request.Request("https://api.resend.com/emails", data=body, method="POST",
-    headers={"Authorization": f"Bearer {key}", "Content-Type": "application/json"})
+    headers={"Authorization": f"Bearer {key}", "Content-Type": "application/json","User-Agent":"MoskoBlogBot/1.0 (+https://moskogas.com.br)"})
 try:
     with urllib.request.urlopen(req, timeout=30) as r:
         print("email enviado:", r.status)
