@@ -225,7 +225,7 @@ def main():
     print(f"preço: refil R$ {refil} / vasilhame R$ {vasilhame} (fonte: {fonte})")
     tema = proximo_tema()
     if not tema:
-        print("fila vazia (todos os temas já gerados)."); return
+        raise SystemExit("FILA VAZIA: nenhum tema pendente em scripts/fila_temas.json. Reponha a fila — o blog parou de publicar.")
     print(f"tema: {tema['slug']} [{tema['categoria']}]")
 
     if dry:
