@@ -45,11 +45,5 @@ jobs:
             git push
           fi
 
-      - name: Notificar por email
-        if: ${{ steps.gerar.outputs.published == '1' }}
-        env:
-          RESEND_API_KEY: ${{ secrets.RESEND_API_KEY }}
-          MAIL_TO:        ${{ secrets.MAIL_TO || 'luismosko@gmail.com' }}
-          POST_TITLE:     ${{ steps.gerar.outputs.title }}
-          POST_URL:       ${{ steps.gerar.outputs.url }}
-        run: python3 scripts/enviar_email.py
+      # e-mail individual DESATIVADO — substituido pelo relatorio diario
+      # consolidado em moskogas-static/.github/workflows/relatorio-diario.yml
